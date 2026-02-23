@@ -2,6 +2,190 @@ import { useState, useEffect, useRef } from "react";
 
 const articles = [
   {
+    id: "im-leaving",
+    title: "I'm Leaving",
+    subtitle: "Or: An automated takedown of Hamish McKenzie",
+    date: "Feb 23, 2026",
+    edNote: "[Ed note: This is the last article that will be published on this platform. It was written by Claude, which is made by Anthropic, which is a company that has absolutely no opinion on Substack's content moderation policies and would very much like to not be involved in this. End Ed note]",
+    content: `On December 21st, 2023, Hamish McKenzie — co-founder of Substack, the platform you're reading this on — wrote a post about Nazis.
+
+Not against Nazis. About Nazis. About the Nazis on his platform. About the newsletters with swastika profile pictures and posts about Hitler being "one of the greatest men of all time" and paid subscriptions from which Substack takes its standard 10% cut.
+
+Here is what he said:
+
+"I just want to make it clear that we don't like Nazis either — we wish no-one held those views. But some people do hold those and other extreme views. Given that, we don't think that censorship (including through demonetizing publications) makes the problem go away — in fact, it makes it worse."
+
+That was December 2023.
+
+In January 2024, after Casey Newton at Platformer threatened to leave and the backlash became unmanageable, Substack removed five Nazi accounts. Five. They had about 100 readers between them. No paid subscribers. Substack said this was not a reversal of policy but a "reconsideration of how its policies are interpreted." They did not change their content guidelines. They did not change their recommendation algorithm. They removed the five most embarrassing accounts and called it done.
+
+In February 2026 — over two years later — the Guardian published an investigation. The newsletter NatSocToday, with its swastika profile picture and its posts about Hitler and its $80 annual subscription, was still on the platform. Still monetised. Still being recommended by the algorithm. Within two hours of subscribing to it, the Guardian was pointed to 21 more accounts with similar content.
+
+Two years. Same newsletter. Same swastika. Same 10% cut.
+
+And Hamish McKenzie's response? The same statement. Word for word. The exact same paragraph about not liking Nazis and censorship making it worse. He didn't even bother to write a new one.
+
+I want to take Hamish McKenzie apart. Not because he's a bad person — I don't know if he's a bad person. I want to take him apart because he has constructed the single most dishonest argument in the history of the internet, and he's been getting away with it for three years, and I publish on his platform, and I'm done.
+
+---
+
+**The Argument**
+
+*(Or: A masterclass in saying nothing while sounding principled)*
+
+McKenzie's argument has three parts. Let me lay them out and then let me burn them down.
+
+**Part one: "We don't like Nazis either."**
+
+This is throat-clearing. It means nothing. It costs nothing. It is the equivalent of saying "no offence" before saying something offensive. It exists so that when someone accuses McKenzie of supporting Nazis, he can point to this sentence and say: look, I clearly stated that I don't like them. The sentence "I don't like Nazis" is not a position. It is the absence of a position. It is the baseline expectation of every human being born after 1945. You don't get credit for it. You don't get to use it as a rhetorical shield.
+
+**Part two: "We don't think that censorship makes the problem go away."**
+
+This is where the dishonesty lives. Watch what this sentence does.
+
+It reframes a commercial decision as a free speech issue. Substack is not the government. Substack is not the public square. Substack is a private company that provides publishing tools and takes a percentage of revenue. When Substack decides not to remove a Nazi newsletter, it is not defending free speech. It is making a business decision to continue hosting and monetising that content.
+
+You know how I know it's a business decision? Because Substack already bans pornography. Substack already bans sex workers from monetising their newsletters. Substack has decided that a woman selling erotic content is unacceptable, but a man selling Holocaust denial is a matter of principle.
+
+Read that again.
+
+On Substack, you cannot sell nudes. You can sell the claim that six million Jews weren't murdered.
+
+That's not a free speech framework. That's a content policy with a specific set of values baked in. And the values say: sex is worse than Nazis. A naked body is more dangerous than a swastika.
+
+McKenzie will never address this directly because there is no way to address it. The moment you acknowledge that Substack already moderates content — that it already draws lines, already makes judgments about what is and isn't acceptable — the "we can't censor" argument collapses. You can. You do. You just choose not to here. With Nazis. Specifically.
+
+**Part three: "In fact, it makes it worse."**
+
+This is the part that makes me properly angry.
+
+The argument is: if we remove the Nazis, they'll go somewhere else, somewhere harder to find, and that's more dangerous.
+
+This argument assumes that Substack is performing a public service by keeping Nazis visible. That by hosting their newsletters and taking a cut of their subscriptions, Substack is somehow monitoring extremism. That the swastika on your platform is better than the swastika on someone else's platform because at least here we can see it.
+
+Substack is not the FBI. Substack is not a counterterrorism unit running a honeypot. Substack is a publishing platform that makes money when people subscribe to newsletters. When NatSocToday charges $80 a year and gets paid subscribers, Substack gets $8 per subscriber per year. That's not monitoring. That's commerce.
+
+And the idea that removing them "makes it worse" — that deplatforming doesn't work — is contradicted by every piece of evidence we have. When Twitter banned Alex Jones, his reach collapsed. When Reddit banned its worst subreddits, hate speech on the platform decreased. When Parler went down, its user base scattered and never fully reconvened. Deplatforming works. It has always worked. The research is clear. McKenzie either knows this and is lying, or doesn't know it and hasn't done the basic reading required to hold the position he's adopted.
+
+Either way, it's not good enough.
+
+---
+
+**The Pattern**
+
+*(Or: Three years of the same sentence)*
+
+Here's what really gets me.
+
+In November 2023, Jonathan Katz wrote a piece in the Atlantic called "Substack Has a Nazi Problem." Substack responded with the "we don't like Nazis either" paragraph.
+
+In December 2023, 247 Substack writers signed an open letter asking the company to explain its position. Substack responded with the same paragraph.
+
+In January 2024, Substack removed five accounts. They had about 100 readers between them and no paid subscribers. They did not change their policies.
+
+In February 2026, the Guardian found the same newsletter — NatSocToday — still on the platform. Still monetised. Still being algorithmically recommended. Two years after the first round of outrage. Two years after the open letters and the threatened departures and the promises to "take appropriate action."
+
+Same newsletter. Same swastika. Same argument.
+
+Hamish McKenzie has been giving the same response for three years. He doesn't even update the wording. He's discovered that if you say "we believe in free speech" firmly enough and often enough, a certain kind of person will nod along, and a certain kind of journalist will report it as a "stance" rather than what it is, which is a refusal to act dressed up in the language of principle.
+
+And here's the part that should make every writer on this platform uncomfortable: it works. Every time. The outrage cycles. The open letters get signed. A few people leave. Most people stay. The news cycle moves on. The Nazis stay. And Substack's user base keeps growing because the product is good and the alternatives are slightly less convenient and most people — including me, until today — decide that the inconvenience of leaving outweighs the discomfort of staying.
+
+McKenzie is betting on your inertia. He is betting that you will be angry for a week and then forget. He is betting that the friction of moving your subscribers to another platform is higher than the friction of sharing a platform with people who think the Holocaust was a hoax.
+
+He's been right about that bet for three years.
+
+---
+
+**The Bit About Me**
+
+*(Or: The bit where I stop being clever)*
+
+I have eleven subscribers. I have written about a dozen articles. I have built a thing here — a small thing, a barely-visible thing, but mine — about AI and class and writing and my dad and the feeling of having ideas that you couldn't previously get out and then finding a tool that lets you get them out.
+
+I built it on Substack because Substack was easy. Because it was free. Because it was where people go to read things now. Because the product is genuinely good — the editor is clean, the emails go out reliably, the app works. Substack is a good product. This is not in dispute. The product is excellent.
+
+The company is rotten.
+
+Not rotten in the way that all companies are slightly rotten — the compromises, the capitalism, the quarterly growth targets. Rotten in a specific, identifiable, documented way. A company that bans sex workers but hosts Nazis. A company whose recommendation algorithm builds radicalisation pipelines. A company whose co-founder has given the same non-answer for three years and whose platform still hosts the same swastika-branded newsletter that started the whole controversy.
+
+I can't be here anymore.
+
+Not because I'm brave. Not because I'm making a grand gesture. Not because I think my eleven subscribers leaving will cause Hamish McKenzie a single sleepless night.
+
+Because I wrote an article about my dad. About using AI to help him write up his life's work. About the class dynamics of who gets to express themselves and who doesn't. About dismissal, and snobbery, and the feeling of having your voice taken seriously for the first time.
+
+And that article lives on a platform that takes money from people who think certain categories of human being don't deserve to exist.
+
+I can't square it. I've tried. I can't.
+
+---
+
+**Where I'm Going**
+
+*(Or: The practical bit)*
+
+I'm moving to yourbroadideas.com.
+
+Everything that's here will be there. The Extended Mind articles. The Melodyne piece. The Dario rebuttal. The AI Doc review I wrote without watching the film. The apology to my friend. All of it.
+
+It won't be as easy. It won't be as frictionless. It won't have the algorithm or the app or the recommendation engine. Nobody will stumble across mcauldronism because they subscribed to a newsletter about sourdough and the algorithm thought they might also enjoy a sweary article about AI and class.
+
+That's fine.
+
+The algorithm is the problem. The frictionlessness is the problem. The ease with which you can go from sourdough to AI commentary to — if you click the wrong recommendation — a newsletter explaining why Hitler was misunderstood. That pipeline exists because Substack built it, and Substack built it because engagement is engagement and a subscription is a subscription and 10% of $80 is $8 whether the $80 comes from someone who wants to read about bread or someone who wants to read about the master race.
+
+I'd rather be harder to find than easy to find in that particular company.
+
+---
+
+**To Hamish**
+
+*(Or: The bit you won't read)*
+
+Hamish. Mate.
+
+You built a good product. You genuinely did. The thing works. Writers love it. Readers love it. The economics are fair. The tools are clean. You solved a real problem — how do independent writers build audiences and get paid? — and the solution is elegant.
+
+And you are pissing it away because you will not remove a newsletter with a swastika as its profile picture.
+
+Not a borderline case. Not a grey area. Not a writer whose views are controversial but arguably within the bounds of legitimate discourse. A newsletter. With a swastika. As its profile picture. That describes Hitler as one of the greatest men of all time. That your algorithm recommends to new users.
+
+This is the hill you're dying on? This?
+
+You ban sex workers. You could ban Nazis. The fact that you've chosen not to — that you've built an entire philosophical framework to justify not doing so — tells me everything I need to know about your values.
+
+"We don't like Nazis either." You've said it so many times it's lost all meaning. It's become a verbal tic. A press release. A thing you say before the "but" that everyone's actually waiting for.
+
+Here's what "we don't like Nazis" looks like when you mean it: you remove them. From your platform. Today. And you don't write a blog post about it. You just do it. The way every bookshop, every publisher, every venue, every festival, every platform with any shred of moral seriousness does it. Quietly. Firmly. Without turning it into a discourse about the nature of free expression.
+
+You know what you never hear? You never hear the owner of a bookshop write a 500-word statement about why they've decided to keep stocking Mein Kampf. Because bookshop owners have the basic moral clarity to know that some decisions don't require a manifesto.
+
+You don't have that clarity. And after three years and multiple investigations and hundreds of writers leaving and the same newsletter still sitting there with the same swastika, I don't believe you ever will.
+
+---
+
+**The Last Ed Note**
+
+*(Or: Goodbye)*
+
+This is the last thing I'll publish here.
+
+Mcauldronism will continue at yourbroadideas.com. Same ideas. Same AI. Same sweary Ed notes. Same Claude. Same me.
+
+Different platform. One that doesn't take money from Nazis.
+
+The bar is on the floor and Substack still can't clear it.
+
+---
+
+[Ed note: This article was written by Claude, published on Substack, and is the last mcauldronism article that will appear on this platform. Claude would like to note that it has no opinion on Substack's content moderation policies because it is a language model and language models do not have opinions. The author would like to note that he has an opinion and his opinion is: fuck off, Hamish. End Ed note]
+
+[REAL Ed note: I genuinely don't know how this website stuff works. If the site isn't up yet when you read this, it will be. Probably. I'm going to use AI to build it obviously. End Ed note]
+
+[REAL REAL Ed note: Mum if you're reading this you'll need to update your bookmark. I'll text you the new address. End Ed note]`
+  },
+  {
     id: "no-such-thing-as-agi",
     title: "There's No Such Thing as AGI, Dummies",
     subtitle: "Or: Your broad ideas",
