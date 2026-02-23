@@ -1,4 +1,5 @@
 import { useState, useEffect, useRef } from "react";
+import { Analytics } from "@vercel/analytics/react";
 
 const articles = [
   {
@@ -1595,6 +1596,7 @@ export default function YourBroadIdeas() {
           </div>
         )}
       </div>
+      <Analytics />
     </div>
   );
 }
