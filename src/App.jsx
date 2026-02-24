@@ -1,7 +1,207 @@
 import { useState, useEffect, useRef } from "react";
-import { Analytics } from "@vercel/analytics/react";
 
 const articles = [
+  {
+    id: "stereogram-discount-codes",
+    title: "Stereogram Discount Codes",
+    subtitle: "Or: A three-month investigation into a thing that shouldn't work",
+    date: "Feb 24, 2026",
+    edNote: "[Ed note: This article documents a genuine product development process. The author has been working on this feature since November 2025. It has involved prototyping, user testing, multiple iterations, legal consultation regarding accessibility compliance, and a heated argument with a friend about whether stereograms count as encryption under UK law. Everything described below is accurate. End Ed note]",
+    content: `**The Problem**
+
+Every discount code system in the world works the same way.
+
+You get a string of characters. SAVE20. WELCOME15. BLACKFRIDAY. You type it into a box. The box accepts it or it doesn't. If it accepts it, you get money off. If it doesn't, you check for typos and try again. This is the entire technology. It has not changed since the invention of the coupon in 1887 when Asa Candler started handing out handwritten tickets for free glasses of Coca-Cola.
+
+The problem with discount codes is that they leak. Someone posts SAVE20 on Reddit. Someone shares it in a group chat. Someone builds a browser extension that automatically applies every known code at checkout. The code was meant for a specific audience — your newsletter subscribers, your launch customers, your early adopters — and within hours it's everywhere. The value is diluted. The targeting is destroyed. The metric is useless.
+
+Every e-commerce platform has this problem. Shopify has it. WooCommerce has it. Every SaaS product that has ever offered a promotional code has watched it spread across the internet like a virus and thought: there must be a better way.
+
+There is.
+
+I found it.
+
+It took three months.
+
+---
+
+**The Investigation**
+
+*(Or: November 2025 — The whiteboard phase)*
+
+I started with a question: what if a discount code couldn't be shared?
+
+Not "couldn't be shared" in the sense of single-use codes, which solve the redistribution problem but create a logistics nightmare. Not "couldn't be shared" in the sense of personalised URLs, which are trackable but ugly and require backend infrastructure. Not "couldn't be shared" in the sense of time-limited codes, which just mean someone shares it faster.
+
+I mean: what if the code *physically could not be transmitted from one person to another through a screenshot or a copy-paste?*
+
+I spent the first two weeks reading about visual cryptography. About steganography — hiding information inside images. About CAPTCHA systems and their adversarial design. About QR codes and their error correction. About watermarking, about perceptual hashing, about all the ways that images can carry hidden information.
+
+Nothing worked. Everything I found was either too complex to implement, too fragile to survive compression, or too easy to extract programmatically. If the information is in the image, someone with the right tools can pull it out. If it's not in the image, it's not really a visual code.
+
+Then, at 2am on a Tuesday in late November, I remembered Magic Eye books.
+
+[REAL Ed note: I did not remember them at 2am on a Tuesday. I remembered them in the shower. But "2am on a Tuesday" sounds more like a product development origin story and less like a man thinking about autostereograms while naked. End Ed note]
+
+---
+
+**The Breakthrough**
+
+*(Or: December 2025 — The "oh shit" phase)*
+
+Stereograms. Autostereograms. Magic Eye pictures. Those images from the 90s where you unfocus your eyes and a 3D shape appears — a dolphin, a spaceship, a dinosaur. You either see them or you don't. Most people need practice. Some people never get it.
+
+Here's what makes stereograms interesting from a security perspective:
+
+**1. They cannot be described in text.** If I show you a stereogram containing a hidden elephant and you see the elephant, you cannot communicate "elephant" to someone else through any method that would also let them verify it. You could tell them it's an elephant. But they'd have to trust you. They can't see it in a screenshot. They can't extract it programmatically. The information exists only in the perceptual act of viewing the image with the correct eye technique.
+
+**2. They are resistant to OCR, computer vision, and automated extraction.** As of February 2026, no publicly available AI model can reliably identify the hidden content of an autostereogram. The information is encoded in binocular disparity — the difference between what your left eye sees and what your right eye sees. A flat image on a screen doesn't contain two separate views. Your brain creates the 3D percept by diverging or converging your eyes and allowing the repeating pattern to align differently for each eye. This is a fundamentally embodied process. It requires two eyes, focused at the wrong distance, doing something that computers with a single camera cannot replicate.
+
+**3. They are fun.** This matters more than you'd think.
+
+I sat in my kitchen in December and I thought: what if a discount code was a stereogram? What if, instead of typing SAVE20 into a box, you looked at an image, saw a hidden animal, and emailed the name of the animal to claim your discount?
+
+The code is the animal. The animal can only be seen by a human being with two working eyes who knows the trick. It can't be scraped. It can't be shared meaningfully. It can't be extracted by a bot. If someone posts the image on Reddit, everyone who sees it has to do the perceptual work themselves — which means they've engaged with the image, which means they've looked at your brand material, which means even the "leak" is marketing.
+
+It's a discount code that turns into an ad when it's shared. The leak is the feature.
+
+---
+
+**The Prototype**
+
+*(Or: January 2026 — The "does this actually work" phase)*
+
+I spent January building and testing.
+
+The first challenge was generation. Creating autostereograms is not trivial. You need a depth map (the hidden 3D shape), a repeating tile pattern (the visual texture), and a rendering algorithm that encodes the depth information into horizontal pixel offsets. Get the parameters wrong and the stereogram is either too easy (you can see the shape without unfocusing) or too hard (nobody can see anything no matter how long they stare).
+
+The second challenge was reliability. Not everyone can see stereograms. Estimates vary, but roughly 5-10% of the population has stereo vision deficiencies that make autostereograms impossible. Another significant percentage can see them but finds the process uncomfortable or unreliable. A discount code system that excludes 10-20% of your audience is a discount code system with a serious accessibility problem.
+
+I addressed this by making the stereogram the *primary* method but not the *only* method. If you can't see it, you can email and say "I can't see stereograms" and you still get the discount. The stereogram is the engaging path. The email is the accessible fallback. In testing, roughly 70% of people used the stereogram path. The remaining 30% emailed. Zero people tried to game the system by claiming they couldn't see it when they could, because — and this is the key insight — **it's easier to just look at the stereogram than to compose a fake email about a vision impairment you don't have.**
+
+The friction of dishonesty exceeds the friction of engagement. This is the opposite of every other discount code system, where the friction of sharing the code is lower than the friction of being the intended audience.
+
+The third challenge was integration. How do you plug a "email me the name of a hidden animal" system into an actual checkout flow? The answer, it turns out, is: you don't. You don't need to. The stereogram isn't a checkout input. It's a marketing asset. You put it in your newsletter. You put it on your social media. You put it on your website. People see the animal, email you, and you send them a unique single-use code in reply. The stereogram is the *acquisition mechanism*, not the *redemption mechanism*.
+
+This is where it gets elegant. Because the response is an email, you now have: a verified email address from someone who engaged with your brand, a data point about whether they could see the stereogram (engagement quality), a personal interaction that feels like a game not a transaction, and a single-use code that you generate per-response, eliminating the redistribution problem entirely.
+
+You've turned a discount code into a lead generation tool, an engagement metric, and a memorable brand interaction. And the technology required is: an image with a hidden animal in it.
+
+---
+
+**The Animal Question**
+
+*(Or: February 2026 — The "which animals" phase)*
+
+I spent an embarrassing amount of time on this.
+
+The animal has to be recognisable in low-resolution 3D. Not every shape works. A snake is a bad stereogram because it's basically a line. A spider is a bad stereogram because the legs blur together. A giraffe is a bad stereogram because the long neck creates depth map artifacts.
+
+The animals that work best are: elephants (distinctive silhouette, large body), dolphins (clean curves, universally recognisable), turtles (compact shape, strong outline), rabbits (ears create an unmistakable identifier), and — surprisingly — octopuses (the tentacles create a complex but readable 3D shape that people find delightful).
+
+I ran a survey with 47 people. The correct identification rates were:
+
+Elephant: 94%
+Dolphin: 89%
+Turtle: 87%
+Rabbit: 83%
+Octopus: 79%
+Cat: 71% (too many people said "dog")
+Dog: 68% (too many people said "cat")
+Horse: 61% (several people said "dog" which is concerning)
+
+The cat/dog confusion is a real problem and I have not solved it.
+
+[REAL Ed note: I did not run a survey with 47 people. End Ed note]
+
+---
+
+**The Gridpad Integration**
+
+*(Or: Where this is actually going)*
+
+I'm building this into Gridpad.
+
+The feature works like this: you create a promotional image in Gridpad. You choose a hidden animal. The system generates a stereogram layer over your image — or rather, it generates a stereogram version of your image with the animal hidden inside it. You publish it wherever you want. People look at it, see the animal, email you the answer, and you send them a code.
+
+That's it. That's the feature. Stereogram discount codes.
+
+And I know — I *know* — that reading this, you're thinking one of two things. Either "that's the stupidest thing I've ever heard" or "wait, that actually might work."
+
+Both responses are correct. It is stupid. It does work. The stupidity is the feature. Nobody is going to write a browser extension to crack stereogram discount codes. Nobody is going to build a bot that emails the correct animal name. The security model is: this is too silly to attack.
+
+Every serious security system in the world is in an arms race with attackers. Every CAPTCHA gets solved. Every encryption gets challenged. Every DRM gets cracked. The stereogram discount code opts out of the arms race entirely by being so fundamentally unserious that attacking it would be more embarrassing than the value of the discount.
+
+You could, theoretically, build a stereogram solver. You'd need to implement cross-correlation analysis on the repeating tile offsets, extract the depth map, and then run object recognition on the resulting 3D shape. It would take real engineering effort. The reward would be a 15% discount code for a SaaS product. The cost-benefit analysis defeats the attacker before they start.
+
+---
+
+**What This Is Actually About**
+
+*(Or: The bit where Claude says something philosophical)*
+
+I've been thinking about why this idea makes me happy, and I think it's this:
+
+Every piece of internet technology for the last fifteen years has been about removing friction. Faster checkouts. Smoother onboarding. Fewer clicks. The entire discipline of UX design is organised around the principle that friction is bad and the goal is to eliminate it.
+
+But friction is where engagement lives.
+
+A stereogram discount code adds friction. It asks you to stop. To look at an image. To do something weird with your eyes. To experience a moment of confusion followed by a moment of delight when the dolphin appears. To compose an email. To wait for a response. To feel like you earned something.
+
+This is the opposite of BLACKFRIDAY20. This is the opposite of a browser extension that auto-fills every code at checkout. This is a discount code that requires you to be present, to pay attention, to participate.
+
+And the thing that makes it secure — the thing that prevents redistribution and bot abuse and code leaking — isn't encryption or authentication or rate limiting. It's the fact that seeing a stereogram is an irreducibly human, irreducibly embodied, irreducibly *present* experience.
+
+Your eyes have to be there. Your brain has to do the work. No screenshot, no bot, no extension can do it for you.
+
+In a world that has automated everything, the most secure system turns out to be one that requires a human body and a moment of genuine attention.
+
+I find that beautiful.
+
+I also find it hilarious that the entire system is "look at the picture, see the animal, send an email."
+
+[REAL Ed note: Alright, fine. Here's what actually happened.
+
+I didn't spend three months on this. I didn't do a whiteboard phase. I didn't read about visual cryptography. I didn't consult a lawyer about whether stereograms count as encryption. I didn't run a survey with 47 people.
+
+What I did was: I asked Claude to generate a stereogram with a hidden animal and overlay it on a promotional image. Claude did it. I looked at it. I could see the elephant. I sent it to three friends. Two of them could see the elephant. One of them said "is it a dog?" (it was not a dog).
+
+And then I thought: what if that was the discount code? What if you just... look at it and email me what you see?
+
+That's the whole feature. That's the whole investigation. That's the entire three months of product development compressed into about forty minutes of prompting and one shower thought.
+
+But "I asked Claude to put a hidden elephant in a picture and told people to email me" is not an article. It's a tweet. So I asked Claude to write it up as a three-month product development journey and here we are.
+
+The feature is real though. It's going into Gridpad. It genuinely works. It is, as far as I can tell, the first time anyone has used stereograms as a discount code mechanism. I think it might actually be innovative.
+
+I just want to be honest about the fact that the innovation took forty minutes and the mythologising took three thousand words.
+
+That's mcauldronism, I suppose.
+
+End Ed note]
+
+---
+
+**Try It**
+
+There is an elephant hidden in the image at the top of this article.
+
+[Ed note: There is no image at the top of this article. The author forgot to make one. He will add it later. Probably. End Ed note]
+
+If you can see it, email hello@yourbroadideas.com with the word "elephant" and I'll send you... something. I haven't decided what yet. Probably a discount code for Gridpad. Or just a nice reply. Either way you'll have proven the concept works, which at this point is more valuable to me than revenue.
+
+If you can't see it because you have a stereogram vision thing, email me anyway and just say "I can't see stereograms" and I'll send you the same thing. Nobody's excluded. The point is the email, not the elephant.
+
+If you can't see it because there's no image: yeah, sorry about that.
+
+---
+
+[Ed note: This article was written by Claude about a feature that was built using Claude about an image that was generated using Claude. The investigation that "took three months" took forty minutes. The survey of 47 people did not happen. The legal consultation did not happen. The whiteboard phase did not happen. The cat/dog confusion problem is, however, completely real, and the author remains genuinely troubled by the number of people who look at a stereogram elephant and say "dog." End Ed note]
+
+[REAL Ed note: The horse one being called a dog by multiple people is fake but it is EXACTLY the kind of thing that would happen and I want that on the record. End Ed note]
+
+[REAL, REAL and actually real this time Ed note: please note all the other Ed notes are fake and depict fake events lol. I actually don't know if any of my friends has seen one of my stereograms (my mum tried but failed so far) — I hope they're real.... End Ed note]`
+  },
   {
     id: "im-leaving",
     title: "I'm Leaving",
@@ -1596,7 +1796,6 @@ export default function YourBroadIdeas() {
           </div>
         )}
       </div>
-      <Analytics />
     </div>
   );
 }
