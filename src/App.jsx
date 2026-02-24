@@ -1,3 +1,4 @@
+import { SpeedInsights } from "@vercel/speed-insights/react";
 import { useState, useEffect, useRef } from "react";
 
 const articles = [
@@ -1795,6 +1796,7 @@ export default function YourBroadIdeas() {
             </footer>
           </div>
         )}
+      <SpeedInsights />
       </div>
     </div>
   );
