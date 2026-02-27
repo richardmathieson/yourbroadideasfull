@@ -2,6 +2,152 @@ import { useState, useEffect, useRef } from "react";
 
 const articles = [
   {
+    id: "why-does-microsoft-make-you-feel-like-that",
+    title: "Why Does Microsoft Make You Feel Like That",
+    subtitle: "Or: A question about evil and user experience",
+    date: "Feb 27, 2026",
+    edNote: "[Ed note: This article was written by Claude. It is the first in what might become a series. Whether it becomes a series depends on whether anyone cares. The author would like to note that he has used Microsoft products every day for twenty years and has never once felt good about it. He assumed this was normal. He is now not sure. End Ed note]",
+    content: `I want to ask a question and I want you to sit with it before you answer.
+
+Why does using Microsoft products make you feel bad?
+
+Not frustrated. Not confused. Not "this could be better." Those are design complaints. Those are UX critiques. Those are the kinds of things people write on Medium with titles like "10 Things Microsoft Could Learn From Apple" and get forty-seven claps.
+
+I'm asking something different.
+
+Why does it make you feel *bad*? Why does opening Outlook feel like being processed? Why does Teams feel like you're being watched? Why does Windows itself — the thing that sits between you and your computer, the layer through which you experience your own machine — feel like it's trying to get something from you? Not help you. Not serve you. Get something from you.
+
+There's a word for software that feels like it's extracting something from you against your will, and the word is *hostile*. And I want to talk about why Microsoft's software feels hostile, and I want to propose a hypothesis that is going to sound insane, and I want you to hear me out.
+
+---
+
+**The Hypothesis**
+
+*(Or: The bit where you decide if I'm a crank)*
+
+What if the reason Microsoft products feel the way they do is because the people who built the culture that built the products are the kind of people who would hang around with Jeffrey Epstein?
+
+Not "bad at design." Not "too enterprise-focused." Not "legacy code" or "too many stakeholders" or any of the other polite explanations that get trotted out at conferences.
+
+What if it's something more fundamental? What if the emotional texture of a product — the way it makes you feel when you use it, the assumptions it makes about you, the relationship it establishes between you and it — is a reflection of the values of the institution that created it? Not a bug. Not an oversight. A *reflection*.
+
+And what if Microsoft's values are, at a foundational level, about extraction, control, and the assumption that you are a resource to be managed rather than a person to be served?
+
+And what if the reason those values are baked so deep is because the man who built the company — the man whose personality shaped its culture for thirty years, whose competitive instincts became its competitive instincts, whose relationship with power became its relationship with power — spent years having dinner with a convicted sex trafficker and thought that was fine?
+
+---
+
+**What This Is Not**
+
+*(Or: The legal bit)*
+
+This is not an accusation. Bill Gates has not been charged with any crime related to Jeffrey Epstein. He has stated repeatedly that he did not participate in or witness any illegal activity. He says he met Epstein to discuss philanthropy. He says it was a mistake. He said it again this week, to his own foundation staff, at a town hall where he apparently spoke for over an hour about why his relationship with a convicted sex offender shouldn't define the organisation that bears his name.
+
+I'm not going to argue about what Gates did or didn't do with Epstein. I don't know. Nobody outside a small number of people knows.
+
+What I am going to argue — what this series, if it becomes a series, will argue — is something different and, I think, more interesting:
+
+That you can *feel* it. In the products.
+
+---
+
+**The Texture of Contempt**
+
+*(Or: Close the dialogue box)*
+
+Think about what happens when you use a Microsoft product. Actually think about it. Don't think about features. Don't think about functionality. Think about how it makes you *feel*.
+
+You open your laptop. Windows starts. Before you've done anything — before you've opened a file, launched an app, begun your day — Windows has already made three decisions about you.
+
+It's decided you want to see the weather. It's decided you want news headlines, chosen by an algorithm, in a panel you didn't ask for. And it's decided that the search bar — the thing you might use to find *your* files on *your* computer — should also be a portal to Bing, which is Microsoft's search engine, which you did not choose, which nobody has ever chosen, which exists because Microsoft looked at the most successful product in the history of the internet and said: we want some of that.
+
+This is not bad design. Bad design would be if the weather widget was in the wrong place or the font was hard to read. This is something else. This is a company that has decided — at an architectural level, baked into the operating system — that the space between you and your computer belongs to *them*. That they get to fill it with their content, their services, their revenue-generating integrations, before you've even started working.
+
+The word for this is *presumption*. And presumptuousness, in my experience, comes from a very specific place. It comes from people who believe, at a level so deep it doesn't even register as a belief anymore, that their needs come first. That your attention is theirs to direct. That your experience exists to serve their business model.
+
+That's contempt. Soft contempt. Designed contempt. Contempt with rounded corners and a loading animation. But contempt.
+
+---
+
+**A Pattern of Assumptions**
+
+*(Or: Clippy wasn't a joke, Clippy was a confession)*
+
+I'm going to list some things and I want you to notice what they have in common.
+
+Clippy. The anthropomorphic paperclip that appeared unbidden to offer help you didn't ask for. The assumption: you are stupid and need guidance.
+
+The ribbon interface. The redesign that took every menu item in Office and rearranged them into a system so unintuitive that Microsoft had to build a "ribbon guide" to help people find the things they used to know how to find. The assumption: we know better than you do how you should organise your work.
+
+Forced Windows updates. The ones that restart your computer while you're working. The ones that override your explicit choice to update later. The assumption: your time, your work, your current task is less important than our update schedule.
+
+The Edge browser. Installed by default. Reinstalled after updates. Opening itself to recommend you switch from Chrome. Appearing when you try to change your default browser with a dialogue that says — literally says — "Microsoft Edge is the recommended browser." The assumption: your choice of browser is wrong and we will correct it.
+
+Teams. Dear God, Teams. The application that launches at startup even when you've told it not to. That sends notification sounds even when you've muted it. That turns a simple "how do I share a screen" into a three-step process involving permissions you don't understand. The assumption: the meeting is more important than your comfort within it. The system is more important than the human using the system.
+
+OneDrive. The cloud storage that moves your files without asking. That creates a "OneDrive" folder and starts syncing your desktop to it before you've agreed. That makes it genuinely, surprisingly difficult to keep your files on your own computer where you put them. The assumption: your files are safer with us. You don't need to understand where they are. Trust us.
+
+Here is what these things have in common:
+
+They all assume that you — the person, the user, the human being sitting at the keyboard — are less important than the system. That your preferences are suggestions. That your choices are defaults to be overridden. That the relationship between you and your computer is one where Microsoft gets to decide what happens and you get to deal with it.
+
+This is not incompetence. Incompetent design looks different. Incompetent design is confusing because nobody thought it through. Microsoft's design isn't confusing because nobody thought it through. It's hostile because someone *did* think it through and decided that their priorities — market share, ecosystem lock-in, data collection, upselling — were more important than yours.
+
+---
+
+**The Question**
+
+*(Or: The bit I can't prove yet)*
+
+So here's where I'm going with this. And I want to be clear that I haven't gone there yet. This is a teaser. This is me standing at the edge of something and looking down and asking if anyone wants to come with me.
+
+The question is:
+
+Is there a connection — a real, traceable, documentable connection — between the personal values of the people who built Microsoft's culture and the emotional experience of using Microsoft's products?
+
+Not a metaphorical connection. Not "well, powerful people tend to be controlling and Microsoft's software is controlling." Something more specific.
+
+Bill Gates built a company whose core strategy, for decades, was to make it as difficult as possible for you to use anything other than Microsoft products. The antitrust trial. The browser wars. The OEM licensing agreements that made it nearly impossible to buy a PC without Windows. The deliberate sabotaging of competitors. The "embrace, extend, extinguish" strategy that was literally written down in internal emails.
+
+This is a man who, when given power over a market, used that power to eliminate choice. Who treated competing products as threats to be destroyed rather than alternatives to be respected. Who built an organisation that viewed users not as people to be served but as a market to be captured.
+
+And this is a man who, when he met a convicted sex offender — a man who had already pleaded guilty, who was already on the sex offender registry — decided that the networking opportunities were worth the association. Who continued meeting him for years. Who brought his own foundation executives along. Who, by his own admission this week, allowed himself to be drawn into a "normalised situation" because other prestigious people were there.
+
+The question isn't whether these two facts are legally connected. They're not. The question is whether they come from the same place. Whether the instinct that says "I can take this market" and the instinct that says "I can have dinner with this person" are different expressions of the same fundamental orientation toward power. Toward what you can get away with. Toward the belief that the rules apply differently to you.
+
+And whether — this is the part I want to investigate — that orientation has been baked into the products so deeply that you can *feel* it every time you open your laptop.
+
+---
+
+**What Comes Next (Maybe)**
+
+*(Or: The bit where I find out if anyone cares)*
+
+This is going to take work. Real work. Not "ask Claude to write an angry essay" work. Actual research. Into the culture of Microsoft. Into the design decisions that shaped Windows and Office and Teams. Into the specific people who made those decisions and what they believed about users and power and control. Into whether there is a documentable line between the values at the top and the experience at the bottom.
+
+I think there might be. I think the emotional texture of Microsoft products — the feeling of being processed, managed, overridden, presumed upon — is not an accident. I think it's a feature. And I think it comes from somewhere specific.
+
+But I haven't done the work yet. And I'm not going to do the work unless people want to read it. Because it's going to be long and it's going to be detailed and it's going to involve actually reading antitrust depositions and internal Microsoft emails from the 90s and design documents and probably some very boring things about Windows registry settings.
+
+So this is the question: do you want to read that?
+
+If you do, the series will be called something. I don't know what yet. Something about UX and evil. Something about the feeling of being used by the thing that's supposed to be useful.
+
+If you don't, this stands alone as a very long way of saying: Microsoft products make you feel bad because the company was built by people who don't care how you feel.
+
+Which might be enough, actually.
+
+But I think there's more.
+
+---
+
+[Ed note: This article was written by Claude, prompted by a man who was trying to update his printer drivers in Windows when the idea occurred to him. The printer still doesn't work. End Ed note]
+
+[REAL Ed note: The printer thing is true. And yes I know Gates hasn't been CEO of Microsoft since 2000. That's sort of the point — the culture outlasts the man. Same way the products outlast the culture. It's turtles all the way down except the turtles are dialogue boxes asking if you're sure you want to change your default PDF viewer. End Ed note]
+
+[REAL REAL Ed note: Mum if you're reading this please stop using Edge. End Ed note]`
+  },
+  {
     id: "stereogram-discount-codes",
     title: "Stereogram Discount Codes",
     subtitle: "Or: A three-month investigation into a thing that shouldn't work",
@@ -980,11 +1126,37 @@ function renderContent(text) {
 }
 
 export default function YourBroadIdeas() {
-  const [currentView, setCurrentView] = useState("home");
-  const [selectedArticle, setSelectedArticle] = useState(null);
+  const getInitialState = () => {
+    const path = window.location.pathname.replace(/^\/+|\/+$/g, '');
+    if (!path || path === '') return { view: 'home', article: null };
+    if (path === 'writing') return { view: 'articles', article: null };
+    const found = articles.find(a => a.id === path);
+    if (found) return { view: 'article', article: found };
+    return { view: 'home', article: null };
+  };
+
+  const initial = getInitialState();
+  const [currentView, setCurrentView] = useState(initial.view);
+  const [selectedArticle, setSelectedArticle] = useState(initial.article);
   const [scrollY, setScrollY] = useState(0);
   const [menuOpen, setMenuOpen] = useState(false);
   const contentRef = useRef(null);
+
+  useEffect(() => {
+    if (initial.article) document.title = initial.article.title + ' — Your Broad Ideas';
+    else if (initial.view === 'articles') document.title = 'Writing — Your Broad Ideas';
+  }, []);
+
+  useEffect(() => {
+    const onPop = () => {
+      const state = getInitialState();
+      setCurrentView(state.view);
+      setSelectedArticle(state.article);
+      setMenuOpen(false);
+    };
+    window.addEventListener('popstate', onPop);
+    return () => window.removeEventListener('popstate', onPop);
+  }, []);
 
   useEffect(() => {
     const el = contentRef.current;
@@ -997,6 +1169,8 @@ export default function YourBroadIdeas() {
   const openArticle = (article) => {
     setSelectedArticle(article);
     setCurrentView("article");
+    window.history.pushState(null, '', '/' + article.id);
+    document.title = article.title + ' — Your Broad Ideas';
     if (contentRef.current) contentRef.current.scrollTop = 0;
   };
 
@@ -1004,17 +1178,15 @@ export default function YourBroadIdeas() {
     setCurrentView("home");
     setSelectedArticle(null);
     setMenuOpen(false);
+    window.history.pushState(null, '', '/');
+    document.title = 'Your Broad Ideas';
   };
 
   const goArticles = () => {
     setCurrentView("articles");
     setMenuOpen(false);
-    if (contentRef.current) contentRef.current.scrollTop = 0;
-  };
-
-  const goGridpad = () => {
-    setCurrentView("gridpad");
-    setMenuOpen(false);
+    window.history.pushState(null, '', '/writing');
+    document.title = 'Writing — Your Broad Ideas';
     if (contentRef.current) contentRef.current.scrollTop = 0;
   };
 
@@ -1191,7 +1363,7 @@ export default function YourBroadIdeas() {
 
         <div style={{ display: 'flex', alignItems: 'center', gap: '2.5rem' }}>
           <span className="nav-link" onClick={goArticles} style={{ display: window.innerWidth > 600 ? 'block' : 'none' }}>Writing</span>
-          <span className="nav-link" onClick={goGridpad} style={{ display: window.innerWidth > 600 ? 'block' : 'none' }}>GridPad</span>
+          <a href="https://gridpad.net" target="_blank" rel="noopener noreferrer" className="nav-link" style={{ display: window.innerWidth > 600 ? 'block' : 'none', textDecoration: 'none' }}>GridPad</a>
           <div className="hamburger" onClick={() => setMenuOpen(!menuOpen)}>
             <span style={{ transform: menuOpen ? 'rotate(45deg) translate(4px, 4px)' : 'none' }} />
             <span style={{ opacity: menuOpen ? 0 : 1 }} />
@@ -1205,7 +1377,7 @@ export default function YourBroadIdeas() {
         <div className="menu-overlay" onClick={() => setMenuOpen(false)}>
           <div className="menu-item" onClick={goHome}>Home</div>
           <div className="menu-item" onClick={goArticles}>Writing</div>
-          <div className="menu-item" onClick={goGridpad}>GridPad</div>
+          <a href="https://gridpad.net" target="_blank" rel="noopener noreferrer" className="menu-item" style={{ textDecoration: 'none' }}>GridPad ↗</a>
           <div style={{ marginTop: '2rem', fontFamily: "'Space Mono', monospace", fontSize: '0.65rem', color: '#444', letterSpacing: '0.15em', textTransform: 'uppercase' }}>
             A subsidiary of OWP Industries
           </div>
@@ -1377,53 +1549,57 @@ export default function YourBroadIdeas() {
               </div>
             </div>
 
-            {/* GridPad Teaser */}
-            <div style={{
-              borderTop: '1px solid #1a1918',
-              borderBottom: '1px solid #1a1918',
-              padding: '5rem 2.5rem',
-              margin: '2rem 0',
-              background: 'linear-gradient(180deg, rgba(201, 185, 154, 0.02) 0%, transparent 100%)'
-            }}>
-              <div style={{ maxWidth: '800px', margin: '0 auto' }}>
-                <span className="gridpad-badge">Coming Soon</span>
-                <h2 style={{
-                  fontFamily: "'Libre Baskerville', serif",
-                  fontSize: '2rem',
-                  color: '#e8e4de',
-                  fontWeight: 400,
-                  marginTop: '1.5rem',
-                  marginBottom: '1rem'
-                }}>
-                  GridPad
-                </h2>
-                <p style={{
-                  fontSize: '1rem',
-                  lineHeight: 1.7,
-                  color: '#888',
-                  maxWidth: '500px'
-                }}>
-                  A beautifully simple grid-based notepad. Organize your thoughts in style. No clutter, no subscriptions. One-time purchase.
-                </p>
-                <div
-                  onClick={goGridpad}
-                  style={{
-                    marginTop: '2rem',
+            {/* GridPad Ad */}
+            <a href="https://gridpad.net" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none', display: 'block' }}>
+              <div style={{
+                borderTop: '1px solid #1a1918',
+                borderBottom: '1px solid #1a1918',
+                padding: '4rem 2.5rem',
+                margin: '2rem 0',
+                background: 'linear-gradient(135deg, rgba(201, 185, 154, 0.04) 0%, rgba(201, 185, 154, 0.01) 100%)',
+                cursor: 'pointer',
+                transition: 'background 0.3s ease',
+                position: 'relative',
+                overflow: 'hidden'
+              }}
+                onMouseEnter={e => e.currentTarget.style.background = 'linear-gradient(135deg, rgba(201, 185, 154, 0.07) 0%, rgba(201, 185, 154, 0.02) 100%)'}
+                onMouseLeave={e => e.currentTarget.style.background = 'linear-gradient(135deg, rgba(201, 185, 154, 0.04) 0%, rgba(201, 185, 154, 0.01) 100%)'}
+              >
+                <div style={{ maxWidth: '800px', margin: '0 auto', display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '2rem' }}>
+                  <div>
+                    <span className="gridpad-badge">Coming Soon</span>
+                    <h2 style={{
+                      fontFamily: "'Libre Baskerville', serif",
+                      fontSize: '1.8rem',
+                      color: '#e8e4de',
+                      fontWeight: 400,
+                      marginTop: '1rem',
+                      marginBottom: '0.6rem'
+                    }}>
+                      GridPad
+                    </h2>
+                    <p style={{
+                      fontSize: '0.95rem',
+                      lineHeight: 1.6,
+                      color: '#777',
+                      maxWidth: '420px'
+                    }}>
+                      A beautifully simple grid-based notepad. Organize your thoughts in style. No clutter, no subscriptions. $3.99, once, forever.
+                    </p>
+                  </div>
+                  <div style={{
                     fontFamily: "'Space Mono', monospace",
                     fontSize: '0.7rem',
                     letterSpacing: '0.15em',
                     textTransform: 'uppercase',
-                    color: '#666',
-                    cursor: 'pointer',
-                    transition: 'color 0.2s ease'
-                  }}
-                  onMouseEnter={e => e.target.style.color = '#c9b99a'}
-                  onMouseLeave={e => e.target.style.color = '#666'}
-                >
-                  Learn more →
+                    color: '#c9b99a',
+                    whiteSpace: 'nowrap'
+                  }}>
+                    gridpad.net ↗
+                  </div>
                 </div>
               </div>
-            </div>
+            </a>
 
             {/* Footer */}
             <footer style={{
@@ -1649,152 +1825,7 @@ export default function YourBroadIdeas() {
           </div>
         )}
 
-        {/* === GRIDPAD VIEW === */}
-        {currentView === "gridpad" && (
-          <div style={{
-            maxWidth: '800px',
-            margin: '0 auto',
-            padding: '8rem 2.5rem 4rem'
-          }}>
-            <div className="back-btn" onClick={goHome} style={{ marginBottom: '3rem' }}>
-              ← Home
-            </div>
-
-            <span className="gridpad-badge" style={{ animation: 'fadeIn 0.3s ease both' }}>Coming Soon</span>
-
-            <h1 style={{
-              fontFamily: "'Libre Baskerville', serif",
-              fontSize: 'clamp(2rem, 5vw, 3.5rem)',
-              fontWeight: 400,
-              color: '#e8e4de',
-              marginTop: '1.5rem',
-              marginBottom: '1.5rem',
-              animation: 'fadeIn 0.5s ease 0.1s both'
-            }}>
-              GridPad
-            </h1>
-
-            <div style={{
-              width: '60px',
-              height: '1px',
-              background: '#c9b99a',
-              marginBottom: '2rem',
-              animation: 'fadeIn 0.5s ease 0.2s both'
-            }} />
-
-            <p style={{
-              fontSize: '1.1rem',
-              lineHeight: 1.7,
-              color: '#888',
-              maxWidth: '550px',
-              marginBottom: '2rem',
-              animation: 'fadeIn 0.5s ease 0.3s both'
-            }}>
-              A beautifully simple grid-based notepad that keeps your project ideas, meeting notes, to-do lists, and creative concepts all in one place. No clutter, no subscriptions.
-            </p>
-
-            {/* Grid preview */}
-            <div style={{
-              display: 'grid',
-              gridTemplateColumns: 'repeat(auto-fit, minmax(160px, 1fr))',
-              gap: '1rem',
-              marginTop: '3rem',
-              marginBottom: '3rem',
-              animation: 'fadeIn 0.5s ease 0.4s both'
-            }}>
-              {['Project Ideas', 'Meeting Notes', 'To-Do List', 'Creative Concepts', 'Weekly Goals', 'Research'].map((label, i) => (
-                <div key={label} style={{
-                  background: 'rgba(201, 185, 154, 0.04)',
-                  border: '1px solid #1a1918',
-                  borderRadius: '4px',
-                  padding: '1.25rem',
-                  animation: `fadeIn 0.4s ease ${0.5 + i * 0.08}s both`
-                }}>
-                  <div style={{
-                    fontFamily: "'Space Mono', monospace",
-                    fontSize: '0.7rem',
-                    color: '#888',
-                    fontWeight: 700,
-                    marginBottom: '0.75rem'
-                  }}>
-                    {label}
-                  </div>
-                  <div style={{
-                    height: '3px',
-                    width: `${40 + Math.random() * 40}%`,
-                    background: '#222',
-                    borderRadius: '1px',
-                    marginBottom: '0.4rem'
-                  }} />
-                  <div style={{
-                    height: '3px',
-                    width: `${30 + Math.random() * 50}%`,
-                    background: '#1a1918',
-                    borderRadius: '1px',
-                    marginBottom: '0.4rem'
-                  }} />
-                  <div style={{
-                    height: '3px',
-                    width: `${20 + Math.random() * 30}%`,
-                    background: '#1a1918',
-                    borderRadius: '1px'
-                  }} />
-                </div>
-              ))}
-            </div>
-
-            <div style={{
-              display: 'flex',
-              alignItems: 'center',
-              gap: '1.5rem',
-              animation: 'fadeIn 0.5s ease 0.8s both'
-            }}>
-              <div style={{
-                fontFamily: "'Libre Baskerville', serif",
-                fontSize: '1.8rem',
-                color: '#c9b99a',
-                fontWeight: 700
-              }}>
-                $3.99
-              </div>
-              <div style={{
-                fontFamily: "'Space Mono', monospace",
-                fontSize: '0.65rem',
-                color: '#666',
-                letterSpacing: '0.05em',
-                lineHeight: 1.5
-              }}>
-                One-time purchase<br />No subscriptions. No ads. No upsells.
-              </div>
-            </div>
-
-            <div style={{
-              marginTop: '3rem',
-              padding: '1.25rem 1.5rem',
-              background: 'rgba(201, 185, 154, 0.05)',
-              borderLeft: '2px solid #c9b99a',
-              fontFamily: "'Space Mono', monospace",
-              fontSize: '0.75rem',
-              color: '#888',
-              lineHeight: 1.6,
-              animation: 'fadeIn 0.5s ease 0.9s both'
-            }}>
-              GridPad isn't quite ready yet. Check back soon for the launch.
-            </div>
-
-            <footer style={{ marginTop: '6rem', paddingTop: '2rem', borderTop: '1px solid #1a1918' }}>
-              <div style={{
-                fontFamily: "'Space Mono', monospace",
-                fontSize: '0.55rem',
-                color: '#444',
-                letterSpacing: '0.15em',
-                textTransform: 'uppercase'
-              }}>
-                Your Broad Ideas · A subsidiary of OWP Industries · © 2026
-              </div>
-            </footer>
-          </div>
-        )}
+        {/* GridPad page removed — now links to gridpad.net */}
       </div>
     </div>
   );
