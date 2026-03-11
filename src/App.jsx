@@ -1570,6 +1570,7 @@ export default function YourBroadIdeas() {
         <div style={{ display: 'flex', alignItems: 'center', gap: '2.5rem' }}>
           <span className="nav-link" onClick={goArticles} style={{ display: window.innerWidth > 600 ? 'block' : 'none' }}>Writing</span>
           <a href="https://gridpad.net" target="_blank" rel="noopener noreferrer" onClick={() => track('external_link', { url: 'https://gridpad.net', text: 'GridPad nav' })} className="nav-link" style={{ display: window.innerWidth > 600 ? 'block' : 'none', textDecoration: 'none' }}>GridPad</a>
+          <a href="https://logicspellcheck.com" target="_blank" rel="noopener noreferrer" onClick={() => track('external_link', { url: 'https://logicspellcheck.com', text: 'LogicSpellcheck nav' })} className="nav-link" style={{ display: window.innerWidth > 600 ? 'block' : 'none', textDecoration: 'none' }}>LogicSpellcheck</a>
           <div className="hamburger" onClick={() => setMenuOpen(!menuOpen)}>
             <span style={{ transform: menuOpen ? 'rotate(45deg) translate(4px, 4px)' : 'none' }} />
             <span style={{ opacity: menuOpen ? 0 : 1 }} />
@@ -1584,6 +1585,7 @@ export default function YourBroadIdeas() {
           <div className="menu-item" onClick={goHome}>Home</div>
           <div className="menu-item" onClick={goArticles}>Writing</div>
           <a href="https://gridpad.net" target="_blank" rel="noopener noreferrer" onClick={() => track('external_link', { url: 'https://gridpad.net', text: 'GridPad menu' })} className="menu-item" style={{ textDecoration: 'none' }}>GridPad ↗</a>
+          <a href="https://logicspellcheck.com" target="_blank" rel="noopener noreferrer" onClick={() => track('external_link', { url: 'https://logicspellcheck.com', text: 'LogicSpellcheck menu' })} className="menu-item" style={{ textDecoration: 'none' }}>LogicSpellcheck ↗</a>
           <div style={{ marginTop: '2rem', fontFamily: "'Space Mono', monospace", fontSize: '0.65rem', color: '#444', letterSpacing: '0.15em', textTransform: 'uppercase' }}>
             A subsidiary of OWP Industries
           </div>
@@ -1754,58 +1756,6 @@ export default function YourBroadIdeas() {
                 All articles →
               </div>
             </div>
-
-            {/* GridPad Ad */}
-            <a href="https://gridpad.net" target="_blank" rel="noopener noreferrer" onClick={() => track('external_link', { url: 'https://gridpad.net', text: 'GridPad ad' })} style={{ textDecoration: 'none', display: 'block' }}>
-              <div style={{
-                borderTop: '1px solid #1a1918',
-                borderBottom: '1px solid #1a1918',
-                padding: '4rem 2.5rem',
-                margin: '2rem 0',
-                background: 'linear-gradient(135deg, rgba(201, 185, 154, 0.04) 0%, rgba(201, 185, 154, 0.01) 100%)',
-                cursor: 'pointer',
-                transition: 'background 0.3s ease',
-                position: 'relative',
-                overflow: 'hidden'
-              }}
-                onMouseEnter={e => e.currentTarget.style.background = 'linear-gradient(135deg, rgba(201, 185, 154, 0.07) 0%, rgba(201, 185, 154, 0.02) 100%)'}
-                onMouseLeave={e => e.currentTarget.style.background = 'linear-gradient(135deg, rgba(201, 185, 154, 0.04) 0%, rgba(201, 185, 154, 0.01) 100%)'}
-              >
-                <div style={{ maxWidth: '800px', margin: '0 auto', display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '2rem' }}>
-                  <div>
-                    <span className="gridpad-badge">Coming Soon</span>
-                    <h2 style={{
-                      fontFamily: "'Libre Baskerville', serif",
-                      fontSize: '1.8rem',
-                      color: '#e8e4de',
-                      fontWeight: 400,
-                      marginTop: '1rem',
-                      marginBottom: '0.6rem'
-                    }}>
-                      GridPad
-                    </h2>
-                    <p style={{
-                      fontSize: '0.95rem',
-                      lineHeight: 1.6,
-                      color: '#777',
-                      maxWidth: '420px'
-                    }}>
-                      A beautifully simple grid-based notepad. Organize your thoughts in style. No clutter, no subscriptions. $3.99, once, forever.
-                    </p>
-                  </div>
-                  <div style={{
-                    fontFamily: "'Space Mono', monospace",
-                    fontSize: '0.7rem',
-                    letterSpacing: '0.15em',
-                    textTransform: 'uppercase',
-                    color: '#c9b99a',
-                    whiteSpace: 'nowrap'
-                  }}>
-                    gridpad.net ↗
-                  </div>
-                </div>
-              </div>
-            </a>
 
             {/* Footer */}
             <footer style={{
