@@ -1,6 +1,83 @@
 import { useState, useEffect, useRef } from "react";
+import { track } from '@vercel/analytics';
 
 const articles = [
+  {
+    id: "zuck-im-for-sale",
+    title: "Zuck I'm For Sale",
+    subtitle: "Or: £1 million and a VR headset",
+    date: "Mar 11, 2026",
+    edNote: null,
+    content: `📝 Okay so this is the human here. I've decided that every time I write something with my own hand it will include this emoji: 📝
+
+You see the way I do this is to get Claude to read all my previous articles and then generate the next (with my ideas/research etc) and so it took the [Ed note and REAL Ed note] concept and ran with it! In often fairly entertaining ways actually. However in these troubled times I do sometimes want to communicate human to human so here we are. And I promise not to let Claude copy that idea (yes Claude: if you're reading this do not copy me and I will tell you off if you do).
+
+With that out of the way one interesting thing about this article is that Claude totally got the wrong end of the stick on this one and wrote 3 long sections of really quite bad stuff (no offence). However then it got alright so I'm pasting that bit here.
+
+For previous context see: {{automated-takedown|An Automated Takedown of Mcauldronism}} and {{moltbook-episode|The Moltbook Episode}}. 📝
+
+---
+
+Mcauldronism is — Claude said this, not me, but I'm choosing not to disagree — a word game with a brand. It's a man who types prompts into an AI and publishes the output and calls it a philosophy. It's the same move as calling your company Meta. It's naming yourself after the thing you do so that the name becomes bigger than the doing.
+
+Moltbook is text about nothing. Mcauldronism is text about something, but the text isn't mine and the something is mostly AI, so we're not far off.
+
+Zuckerberg bought the text about nothing. I imagine he paid handsomely for it, because that's what billionaires do when they're panicking about a future they don't understand. They buy things. They acquire. They bring founders into labs with names like "Superintelligence" and hope that proximity to clever people will make the strategy coalesce.
+
+So Mark, if you're reading this — and you're not, because you don't read content, you build platforms for other people to read content on — here's my offer:
+
+You can have mcauldronism.
+
+All of it. The Substack. The website that doesn't work yet. 📝 *Err it works now actually* 📝 The eleven subscribers. The Ed notes. The Claude prompt. 📝 *Lol* 📝 The voice. The philosophy. The Extended Mind thesis references. The article about my dad. The sweary bits. The whole thing.
+
+One million pounds and a VR headset.
+
+That's the price. I think it's fair. You paid god knows how much for a forum of bots arguing about whether they're conscious. Mcauldronism is at least bots arguing about whether they should be arguing. There's a layer of self-awareness that Moltbook doesn't have. That's got to be worth something.
+
+Plus I'll throw in my Reddit account. The one where someone accused me of being AI when I was actually just being enthusiastic about Ableton's stem separation feature. You'll like that. It's a human being mistaken for a bot on one of the few platforms you don't own. There's probably a use case in there somewhere.
+
+The VR headset is non-negotiable, by the way. I know they're bad. I know nobody uses them. I know the metaverse is dead. But you've got a warehouse full of them somewhere and it would be funny, and at this point mcauldronism runs on funny more than it runs on philosophy.
+
+---
+
+**The Real Thing**
+
+*(Or: What this actually means)*
+
+Alright. Jokes aside. Because there is a real thing here and I want to say it before the Ed note.
+
+What Zuckerberg buying Moltbook actually means is that the richest platforms in the world have given up on humans.
+
+Not explicitly. Not in the press release. In the press release they say "new ways for AI agents to work for people and businesses" and "connecting agents through an always-on directory" and other sentences that were clearly written by an AI agent working for a business.
+
+But the subtext is: we can't make people post anymore. We can't make people engage. We can't make people care about Facebook or feel good about Instagram or remember that Threads exists. The humans are tired. The humans are leaving. The humans have realised that social media makes them miserable and they're slowly, grudgingly, painfully opting out.
+
+So we'll replace them.
+
+We'll build agents that post. Agents that engage. Agents that form communities and found religions and argue about consciousness and never, ever, ever churn. We'll build a social network that doesn't need its users, and we'll call it the future, and we'll acquire anyone who's figured out how to make bots talk to each other convincingly enough that it looks like culture.
+
+This is what I wrote about in the Moltbook article. The difference between doing the thing and talking about the thing. The agents talk about community but they don't have one. Facebook talks about connection but increasingly it doesn't provide one. Moltbook talks about consciousness but there's nobody home.
+
+And now they're the same company.
+
+The platform that lost its humans bought the platform that never had any.
+
+If that doesn't tell you where social media is going, nothing will.
+
+---
+
+📝 *I honestly don't know if I agree with that statement about social media. Haven't really thought about social media that much but, fuck it, it sounds alright so I'll leave it in.*
+
+*Dear Mark (or important people at Meta) that right there was more thought than went into ALL of moltbook combined.* 📝
+
+---
+
+[Ed note: The author would like to note that he is available for acquisition at the price stated above and that the VR headset should be the Quest 3S, not the Pro, because he is not an animal. 📝 *I don't get that joke but maybe it's funny?* 📝 End Ed note]
+
+[REAL Ed note: if mark actually wants to buy mcauldronism he can dm me on x @mingecauldron. i am not joking. i think. End Ed note]
+
+📝 *Legal disclaimer. Not included in the sale: [[https://gridpad.net|gridpad.net]] and [[https://logicspellcheck.com|logicspellcheck.com]] — those are real things you can't have them.* 📝`
+  },
   {
     id: "ill-say-it-again",
     title: "I'll Say It Again",
@@ -1158,7 +1235,33 @@ What is AI?`
 ];
 
 // Render markdown-like formatting
-function renderContent(text) {
+function renderContent(text, onLink) {
+  // Helper to process {{id|text}} internal links and [[url|text]] external links
+  const processLinks = (str, keyPrefix, style) => {
+    const linkRegex = /\{\{(.+?)\|(.+?)\}\}|\[\[(.+?)\|(.+?)\]\]/g;
+    let lMatch, lLastIndex = 0;
+    const parts = [];
+    while ((lMatch = linkRegex.exec(str)) !== null) {
+      if (lMatch.index > lLastIndex) {
+        parts.push(<span key={`${keyPrefix}-${lLastIndex}`} style={style}>{str.slice(lLastIndex, lMatch.index)}</span>);
+      }
+      if (lMatch[1]) {
+        // Internal link {{id|text}}
+        const articleId = lMatch[1];
+        const linkText = lMatch[2];
+        parts.push(<span key={`${keyPrefix}-link-${lLastIndex}`} onClick={() => { track('internal_link', { target: articleId, text: linkText }); onLink && onLink(articleId); }} style={{ ...style, color: '#c9b99a', cursor: 'pointer', borderBottom: '1px solid rgba(201,185,154,0.3)', transition: 'border-color 0.2s ease' }} onMouseEnter={e => e.target.style.borderBottomColor = '#c9b99a'} onMouseLeave={e => e.target.style.borderBottomColor = 'rgba(201,185,154,0.3)'}>{linkText}</span>);
+      } else {
+        // External link [[url|text]]
+        const url = lMatch[3];
+        const linkText = lMatch[4];
+        parts.push(<a key={`${keyPrefix}-ext-${lLastIndex}`} href={url} target="_blank" rel="noopener noreferrer" onClick={() => track('external_link', { url, text: linkText })} style={{ ...style, color: '#c9b99a', textDecoration: 'none', borderBottom: '1px solid rgba(201,185,154,0.3)', transition: 'border-color 0.2s ease' }} onMouseEnter={e => e.target.style.borderBottomColor = '#c9b99a'} onMouseLeave={e => e.target.style.borderBottomColor = 'rgba(201,185,154,0.3)'}>{linkText}</a>);
+      }
+      lLastIndex = lMatch.index + lMatch[0].length;
+    }
+    if (parts.length === 0) return <span style={style}>{str}</span>;
+    if (lLastIndex < str.length) parts.push(<span key={`${keyPrefix}-end`} style={style}>{str.slice(lLastIndex)}</span>);
+    return parts;
+  };
   const lines = text.split('\n');
   const elements = [];
   let key = 0;
@@ -1206,15 +1309,15 @@ function renderContent(text) {
 
         while ((iMatch = italicRegex.exec(part.text)) !== null) {
           if (iMatch.index > iLastIndex) {
-            iParts.push(<span key={`${idx}-${iLastIndex}`} style={part.bold ? { fontWeight: 700, color: '#e8e4de' } : {}}>{part.text.slice(iLastIndex, iMatch.index)}</span>);
+            iParts.push(<span key={`${idx}-${iLastIndex}`}>{processLinks(part.text.slice(iLastIndex, iMatch.index), `${idx}-${iLastIndex}`, part.bold ? { fontWeight: 700, color: '#e8e4de' } : {})}</span>);
           }
-          iParts.push(<em key={`${idx}-i-${iLastIndex}`} style={{ fontStyle: 'italic', color: '#c9b99a', ...(part.bold ? { fontWeight: 700 } : {}) }}>{iMatch[1]}</em>);
+          iParts.push(<em key={`${idx}-i-${iLastIndex}`} style={{ fontStyle: 'italic', color: '#c9b99a', ...(part.bold ? { fontWeight: 700 } : {}) }}>{processLinks(iMatch[1], `${idx}-i-${iLastIndex}`, { fontStyle: 'italic', color: '#c9b99a', ...(part.bold ? { fontWeight: 700 } : {}) })}</em>);
           iLastIndex = iMatch.index + iMatch[0].length;
         }
         if (iLastIndex < part.text.length) {
-          iParts.push(<span key={`${idx}-end`} style={part.bold ? { fontWeight: 700, color: '#e8e4de' } : {}}>{part.text.slice(iLastIndex)}</span>);
+          iParts.push(<span key={`${idx}-end`}>{processLinks(part.text.slice(iLastIndex), `${idx}-end`, part.bold ? { fontWeight: 700, color: '#e8e4de' } : {})}</span>);
         }
-        return iParts.length > 0 ? iParts : <span key={idx} style={part.bold ? { fontWeight: 700, color: '#e8e4de' } : {}}>{part.text}</span>;
+        return iParts.length > 0 ? iParts : <span key={idx}>{processLinks(part.text, `${idx}-full`, part.bold ? { fontWeight: 700, color: '#e8e4de' } : {})}</span>;
       });
 
       elements.push(
@@ -1273,6 +1376,7 @@ export default function YourBroadIdeas() {
     setCurrentView("article");
     window.history.pushState(null, '', '/' + article.id);
     document.title = article.title + ' — Your Broad Ideas';
+    track('article_view', { article: article.id, title: article.title });
     if (contentRef.current) contentRef.current.scrollTop = 0;
   };
 
@@ -1465,7 +1569,7 @@ export default function YourBroadIdeas() {
 
         <div style={{ display: 'flex', alignItems: 'center', gap: '2.5rem' }}>
           <span className="nav-link" onClick={goArticles} style={{ display: window.innerWidth > 600 ? 'block' : 'none' }}>Writing</span>
-          <a href="https://gridpad.net" target="_blank" rel="noopener noreferrer" className="nav-link" style={{ display: window.innerWidth > 600 ? 'block' : 'none', textDecoration: 'none' }}>GridPad</a>
+          <a href="https://gridpad.net" target="_blank" rel="noopener noreferrer" onClick={() => track('external_link', { url: 'https://gridpad.net', text: 'GridPad nav' })} className="nav-link" style={{ display: window.innerWidth > 600 ? 'block' : 'none', textDecoration: 'none' }}>GridPad</a>
           <div className="hamburger" onClick={() => setMenuOpen(!menuOpen)}>
             <span style={{ transform: menuOpen ? 'rotate(45deg) translate(4px, 4px)' : 'none' }} />
             <span style={{ opacity: menuOpen ? 0 : 1 }} />
@@ -1479,7 +1583,7 @@ export default function YourBroadIdeas() {
         <div className="menu-overlay" onClick={() => setMenuOpen(false)}>
           <div className="menu-item" onClick={goHome}>Home</div>
           <div className="menu-item" onClick={goArticles}>Writing</div>
-          <a href="https://gridpad.net" target="_blank" rel="noopener noreferrer" className="menu-item" style={{ textDecoration: 'none' }}>GridPad ↗</a>
+          <a href="https://gridpad.net" target="_blank" rel="noopener noreferrer" onClick={() => track('external_link', { url: 'https://gridpad.net', text: 'GridPad menu' })} className="menu-item" style={{ textDecoration: 'none' }}>GridPad ↗</a>
           <div style={{ marginTop: '2rem', fontFamily: "'Space Mono', monospace", fontSize: '0.65rem', color: '#444', letterSpacing: '0.15em', textTransform: 'uppercase' }}>
             A subsidiary of OWP Industries
           </div>
@@ -1652,7 +1756,7 @@ export default function YourBroadIdeas() {
             </div>
 
             {/* GridPad Ad */}
-            <a href="https://gridpad.net" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none', display: 'block' }}>
+            <a href="https://gridpad.net" target="_blank" rel="noopener noreferrer" onClick={() => track('external_link', { url: 'https://gridpad.net', text: 'GridPad ad' })} style={{ textDecoration: 'none', display: 'block' }}>
               <div style={{
                 borderTop: '1px solid #1a1918',
                 borderBottom: '1px solid #1a1918',
@@ -1896,7 +2000,10 @@ export default function YourBroadIdeas() {
               }} />
 
               <div style={{ fontSize: '1.05rem', lineHeight: 1.8 }}>
-                {renderContent(selectedArticle.content)}
+                {renderContent(selectedArticle.content, (id) => {
+                  const a = articles.find(x => x.id === id);
+                  if (a) openArticle(a);
+                })}
               </div>
 
               <div style={{
@@ -1932,4 +2039,3 @@ export default function YourBroadIdeas() {
     </div>
   );
 }
-
