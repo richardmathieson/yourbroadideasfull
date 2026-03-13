@@ -3,6 +3,82 @@ import { track } from '@vercel/analytics';
 
 const articles = [
   {
+    id: "agentic-is-only-a-marketing-term",
+    title: '"Agentic" Is Only a Marketing Term',
+    subtitle: "Or: Not a new paradigm",
+    date: "Mar 13, 2026",
+    edNote: null,
+    content: `📝 Hello dear readers. This one came about because I'd noticed a strange propensity to label everything to do with AI "agentic" and thought, hmm, this is fishy. As ever Claude wrote this based on my research and prompt. One thing to note is that I made Claude double fact check the computer science bit and the first draft included a categorisation mistake (according to Claude). It is, now, to the best of my knowledge, true. However I'm not a computer scientist and very happy to be corrected. 📝
+
+---
+
+The word "agentic" was coined by Andrew Ng in 2024. He used it to describe a design pattern: instead of giving a model one prompt and getting one answer, you put the model in a loop. It tries something. It checks the result. It revises. It tries again. It uses tools. It breaks the task into steps. The output gets better because the process is iterative rather than one-shot.
+
+This was a good observation. It was a useful observation. It described something real about how you can get better results from existing models by structuring the way they work. It was — and I want to be precise here — a *framework*.
+
+Andrew Ng himself has since acknowledged that he didn't anticipate what would happen next, which is that every vendor, every consulting firm, every enterprise software company, and every LinkedIn thought leader with a blue tick would grab the word "agentic" and slap it on everything in sight. Salesforce has agents. Microsoft has agents. SAP has agents. Oracle has agents. ServiceNow has agents. Every CES booth in January was agentic. Every Gartner slide deck is agentic. Every board meeting in every company in every industry now includes someone asking "what's our agent strategy?"
+
+And I want to say this as clearly as I can, because I think it needs saying: *none of this is a new paradigm in computer science*.
+
+---
+
+Here is what an agent is. I'm going to strip it back to the actual thing, underneath all the marketing.
+
+An agent is a program that runs a language model in a loop with access to external tools.
+
+That's it.
+
+The model is the genuinely cool bit. The model — the thing that can understand language, reason about problems, write code, interpret context — that is a genuine breakthrough. That is new. That is something that did not exist five years ago in any useful form and now does, and the fact that it exists changes what software can do.
+
+The loop is a framework built on top of the model. It is code that says: run the model, check the output, decide whether to continue, and if so, feed the output back in and run it again. This is a while loop. This is a *while loop*. It is the first thing you learn in any programming course. The fact that the thing inside the loop is now an LLM instead of a database query or an API call is interesting and useful, but it is not a new kind of computing. It is an old kind of computing with a new thing inside it.
+
+The tools are API calls. The agent can search the web, read a file, query a database, send an email. These are integrations. They are the same integrations that software has been doing since the invention of software. The fact that an LLM decides which integration to call, rather than a hardcoded rule or a human clicking a button, is an improvement. It is not a revolution.
+
+---
+
+Here is what happened, because the Claude analysis I was sent 📝 *Claude is referring to my research doc* 📝 lays it out quite well and I want to put it in plain English:
+
+By late 2024 and into 2025, companies had spent enormous amounts of money on generative AI and were struggling to show any return on investment. The chatbots weren't transformative. The copilots were fancy autocomplete. The boardroom enthusiasm was fading. The Gartner hype cycle was tipping over the peak and heading toward what they politely call the "trough of disillusionment."
+
+The industry needed a new word.
+
+Not a new technology. A new *word*. A new way to describe AI that would reset the hype clock and justify the next round of spending. And "agentic" was perfect for this because it took a real technical pattern — models in loops with tools — and made it sound like an entirely new category of thing. It went from "a useful design pattern" to "the next paradigm" in about six months, propelled by consulting firms who needed something to put on slides and vendors who needed something to put on websites and executives who needed something to tell their boards.
+
+Gartner estimates that only about 130 of the thousands of vendors claiming to offer agentic AI actually have real agentic capabilities. The rest are doing what the industry calls "agent washing" — which is exactly what it sounds like: relabelling existing chatbots and robotic process automation tools with the word "agent" and hoping nobody checks.
+
+Forty percent of agentic AI projects will be cancelled by the end of 2027. Not because the models failed. Because the frameworks around them were sold as paradigm shifts when they were engineering patterns.
+
+---
+
+A design pattern is not a paradigm.
+
+Object-oriented programming was a paradigm shift. The relational database was a paradigm shift. The internet was a paradigm shift. These things changed what was *fundamentally possible* in computing. They didn't just reorganise how existing things worked. They created new categories of thing.
+
+Below that you have architectural patterns — things like Model-View-Controller, or REST — which are ways of organising software that are genuinely important and widely adopted but don't change what's fundamentally possible. They change how you structure the thing. They don't change the thing.
+
+And then below *that* you have design patterns and engineering practices. Useful. Sometimes very useful. But not paradigm shifts. Not new computer science. Just good ideas about how to build stuff.
+
+"Put an LLM in a loop with access to tools" is, at best, an architectural pattern. More honestly, it's a design pattern. It's a good one. But the idea that it represents a new era of computing — the "agentic era," the "age of agents" — is like calling microservices a new form of consciousness. It's a way of building software. It's not a new kind of software.
+
+The LLM is the breakthrough. The loop is just... a loop.
+
+I don't have a computer science degree. I don't have any degree. 📝 *Lol I have a philosophy degree* 📝 But I know the difference between a new ingredient and a new recipe, and agentic AI is a recipe. A good recipe! A useful recipe! But the ingredient — the model — is the part that's actually new.
+
+---
+
+Now. The bit that *is* genuinely interesting, and I want to give it its due because I'm not trying to be a contrarian for the sake of it.
+
+The question of whether you can create self-sufficient programs that operate autonomously in a given environment — programs that pursue goals, encounter obstacles, adapt, and persist — that is a fascinating question. It's the question that makes Moltbook interesting (before Zuckerberg bought it). It's the question that makes Claude Code useful (when it's not hallucinating file paths). It's the question at the heart of the agentic concept, underneath all the marketing.
+
+Can you build something that *runs*? Not something that answers when asked. Something that runs. Something that has an objective and pursues it over time, checking its own work, correcting its own mistakes, escalating when it's stuck. A little organism in a digital environment, doing its thing.
+
+That's cool. That's worth studying. That's worth building.
+
+But — and here is where I land — you do not need to rethink software to do it. You do not need a new paradigm. You do not need to reimagine enterprise architecture or redesign your operating model or hire Deloitte to produce a 40-page report on your "agentic strategy." You need a model, a loop, some tool integrations, and good error handling. That's it. That's the thing. Everything else is a consulting engagement.
+
+The model is the revolution. The agent is just what you build with it.`
+  },
+  {
     id: "zuck-im-for-sale",
     title: "Zuck I'm For Sale",
     subtitle: "Or: £1 million and a VR headset",
