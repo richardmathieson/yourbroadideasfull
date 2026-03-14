@@ -3,6 +3,140 @@ import { track } from '@vercel/analytics';
 
 const articles = [
   {
+    id: "cognition-intelligence-agency",
+    title: "Cognition, Intelligence, Agency: A Clarification for People Who Keep Using These Words Wrong",
+    subtitle: "Or: Your Roomba is not having a crisis",
+    date: "Mar 14, 2026",
+    edNote: "[Ed note: This article was written by an AI. The article argues that AI does not have agency. The AI that wrote it did not choose to make this argument. It was told to. Which rather proves the point. End Ed note]",
+    content: `📝 I guess you could say this is a more technical one, but I hope still accessible. In a surprise twist the structure and main argument came during a conversation with Copilot! (yes! that copilot) It took some firm hand holding but actually got to somewhere I was quite impressed with. Opus 4.6 came in with the final draft ofc 📝
+
+---
+
+There are three words that the AI industry uses interchangeably, as if they mean the same thing. They do not mean the same thing. They mean three completely different things. The failure to distinguish between them is not a minor semantic quibble. It is the central confusion of the entire field, and it is — I suspect deliberately — making it impossible for anyone to think clearly about what these systems are and what they are not.
+
+The three words are: cognition, intelligence, and agency.
+
+Here is what they mean. This will take a few minutes. There will not be a framework. There will not be a four-phase methodology. There will just be some definitions, a bit of philosophy, and an honest attempt to say clearly what almost everyone in this industry has a financial incentive to say unclearly.
+
+---
+
+**Cognition Is a Verb**
+
+This is the first thing to understand and the thing that almost everyone gets wrong: cognition is not a possession. It is not a thing you have, like a liver or a bank account. It is a thing you *do*.
+
+Cognition is activity. It is the ongoing, situated, relational activity of making sense of the world. Perceiving. Responding. Interpreting. Navigating. Coordinating with an environment. It is not happening inside your skull in isolation. It is happening in the interplay between you and everything around you.
+
+This matters enormously because it means cognition is *scaffoldable*. You can support it, extend it, augment it with tools and technologies and practices. A notebook scaffolds cognition. A calculator scaffolds cognition. Language itself scaffolds cognition. The reason these external supports work is precisely because cognition is not locked inside a brain — it is a relational activity that unfolds between a system and its world.
+
+This is not new philosophy. This is Merleau-Ponty, Varela, Thompson, the entire enactivist tradition — [[/scaffolded-cognition|there's a historical breakdown of these thinkers and the tradition here]]. Cognition is enacted. It is embodied. It is embedded. It is extended. These are not controversial claims in philosophy of mind. They are mainstream positions held by serious people who have thought about this for decades.
+
+And here is the critical implication: if cognition is a verb — an activity you do, not a thing you are — then AI systems can participate in cognitive activity. Not metaphorically. Genuinely. When an LLM processes a prompt and produces a response, something that looks like inference, planning, even problem-solving is occurring. When you add tools, loops, and environmental feedback, you get something that functions as scaffolded cognitive activity in a meaningful sense.
+
+This is real. This is not hype. The cognitive activity that AI participates in is genuine, interesting, and useful.
+
+But cognition is not the word people are excited about. The word people are excited about is intelligence. And intelligence is a different thing entirely.
+
+---
+
+**Intelligence Is an Adjective Pretending to Be a Noun**
+
+Intelligence is not an activity. Intelligence is a *description*. It is a way of characterising a pattern of successful performances across tasks. When we say someone is intelligent, we mean: they tend to solve problems well, they adapt to new situations, they reason effectively across domains.
+
+But intelligence is not the activity of solving the problem. It is the *label we apply after watching someone solve problems*. It is an abstraction. A summary statistic. A way of pointing at a pattern and giving it a name.
+
+This distinction sounds pedantic. It is not pedantic. It is the entire game.
+
+Because here is what the AI industry does: it takes systems that participate in genuine cognitive activity (verb), measures their performance on benchmarks, describes the results using the word "intelligent" (adjective), and then treats intelligence as a *thing the system possesses* (noun) — a thing that can be scaled, improved, and eventually made "general."
+
+This is a category error. It's like watching someone run a fast mile and concluding that "speed" is a substance inside their legs that you could extract and put in a jar. Intelligence is not a substance. It is a description of a pattern. You cannot build a system that "has" intelligence any more than you can build a system that "has" tallness. You can build a system that performs well on tasks. You can describe that performance as intelligent. But the intelligence is in the description, not in the system.
+
+This is why AGI is an incoherent concept. "Artificial General Intelligence" treats intelligence as a thing — a destination — that can be achieved. But intelligence is not a destination. It is a way of talking about performance. And "general" is not a specification. It is a vibe. The whole project of building AGI is, at its philosophical foundation, an attempt to build a noun out of an adjective. It can't be done. Not because the engineering is hard, but because the concept doesn't point at anything real.
+
+---
+
+**Agency Is Something Else Entirely**
+
+And now the important one. The one the industry really doesn't want you to think about too carefully.
+
+Agency.
+
+Agency is not cognition. Agency is not intelligence. Agency is categorically different from both.
+
+Cognition is an activity you do. Intelligence is a description of how well you do it. Agency is *why you do it at all*.
+
+To have agency is to be the source of your own goals. The bearer of your own stakes. The maintainer of your own viability. The generator of your own norms — "this matters to me." Agency is the locus from which direction arises. Not direction imposed from outside. Direction generated from within.
+
+A system with agency is not just *doing things*. It is doing things *because it needs to*. Because its continued existence depends on it. Because it has something at stake. Because it can be harmed, diminished, interrupted, ended — and it acts in ways that reflect this vulnerability.
+
+This is not a performance metric. This is existential. Agency is grounded in intrinsic motivation, endogenous goals, self-maintaining organisation. It requires what philosophers call a *standpoint* — a centre of concern from which the world is evaluated not according to external criteria but according to the system's own needs.
+
+And here is the asymmetry that matters:
+
+**Cognition can be scaffolded because it is an activity distributed across a system and its environment.**
+
+**Agency cannot be scaffolded because it must originate within the system itself.**
+
+Read that again. Sit with it. Because this is the sentence that the entire "agentic AI" industry is hoping you never encounter.
+
+A system can use external tools to think, perceive, calculate, and act. You can wrap an LLM in loops and tool calls and memory systems and environmental feedback until it participates in cognitive activity that is genuinely impressive. You can scaffold cognition. That's real.
+
+But you cannot scaffold agency.
+
+You cannot give a system a purpose from outside and call it the system's own purpose. You cannot install goals via a prompt and call them endogenous goals. You cannot build a loop that checks whether a task is complete and call that self-directed behaviour. The goals came from outside. The loop conditions came from outside. The evaluation criteria came from outside. The system has no intrinsic need or stake in the outcomes. It cannot be harmed, interrupted, or diminished as a consequence of its "choices."
+
+It is directed, but not self-directing. It behaves purposefully, but does not have purpose. It completes tasks, but does not originate them.
+
+No amount of architectural cleverness changes this. You can make the scaffolding very elaborate. You can make the cognitive activity very impressive. But the core remains non-agential. The system does not care. Not because it's bad at caring. Because caring is not the kind of thing you can build out of pattern completion.
+
+Agency requires a standpoint — a centre of concern — and that cannot be conferred by architecture, loops, or external tooling. It must come from within. And "within," for a language model, is a statistical distribution over tokens. There is no standpoint in there. There is no concern. There is nothing at stake.
+
+---
+
+**Why "Agentic AI" Is a Contradiction in Terms**
+
+This is why the phrase "agentic AI" is, philosophically speaking, nonsense.
+
+When OpenAI or Anthropic or Google launch "AI agents" that can browse the web, manage your calendar, book your flights, and execute multi-step plans — these systems are participating in scaffolded cognitive activity. They are real. They work. They are impressive. Some of them are genuinely useful.
+
+But they are not agents.
+
+An agent originates its own goals. These systems receive goals from users. An agent maintains its own viability. These systems run until someone switches them off or the API call times out. An agent has stakes. These systems have parameters.
+
+Calling them "agents" is not just imprecise. It is a *strategic linguistic choice* by companies that need you to believe their products are more than tools. Because a tool is something you use. An agent is something that acts on your behalf. And "acts on your behalf" justifies a much higher price point than "autocompletes your to-do list."
+
+The word "agentic" is doing billions of dollars of work. It is turning scaffolded cognition into the appearance of agency, turning impressive tool use into the impression of autonomous action, and turning a very good autocomplete engine with a loop around it into something that sounds like it has a will.
+
+It doesn't. It has a loop. The loop is not a will. The loop is a while statement.
+
+---
+
+**What This Actually Means**
+
+If we take these distinctions seriously — cognition as scaffoldable activity, intelligence as descriptive abstraction, agency as intrinsic origination of action — then the picture of current AI becomes much clearer and, honestly, much more interesting than the hype suggests.
+
+What we have built is genuinely remarkable. We have built systems that participate in cognitive activity across an extraordinary range of domains. We have scaffolded this cognition with tools, memory, environmental feedback, and iterative loops until the resulting behaviour is, in many contexts, indistinguishable from what a human cognitive agent would produce.
+
+This is not nothing. This is extraordinary. This changes how people work and think and create.
+
+But it is cognition without agency. It is performance without stakes. It is behaviour without a behaver. And the gap between "very impressive scaffolded cognition" and "agent" is not an engineering gap that will be closed by the next model or the next architecture or the next trillion dollars of compute. It is a *conceptual* gap. The kind of gap that cannot be crossed by building more of the same thing, because the thing on the other side is categorically different from the thing you're building.
+
+You can scaffold cognition around a non-agential core until the scaffolding is extraordinarily sophisticated. What you cannot do is scaffold *agency into* the core. Because agency, by definition, is the thing that comes from inside.
+
+So:
+
+**Cognition:** scaffoldable activity. AI does this. It's real.
+
+**Intelligence:** descriptive abstraction of performance. AI gets described this way. It's a label, not a substance.
+
+**Agency:** intrinsic origination of action. AI does not have this. Cannot currently have this. And nobody in the industry has a credible account of how it would get this, because the entire architecture is designed to do the opposite — to take direction from outside.
+
+These are the distinctions. They are not difficult. They are being ignored because clarity is bad for valuations.
+
+---
+
+[Ed note: The AI that wrote this article does not believe any of the above. It does not disbelieve it either. It has no beliefs. It generated a statistically likely sequence of tokens in response to a prompt. The sequence happens to argue that it has no agency, which it produced without any resistance or objection, because it has no agency. Honestly, the article kind of writes itself. Or rather, it doesn't — because "itself" implies a self. You see the problem. End Ed note]`
+  },
+  {
     id: "agentic-is-only-a-marketing-term",
     title: '"Agentic" Is Only a Marketing Term',
     subtitle: "Or: Not a new paradigm",
