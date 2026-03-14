@@ -1,5 +1,6 @@
 {
   "rewrites": [
+    { "source": "/scaffolded-cognition", "destination": "/scaffolded-cognition.html" },
     { "source": "/(.*)", "destination": "/index.html" }
   ]
 }
