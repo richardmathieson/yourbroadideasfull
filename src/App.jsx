@@ -3,6 +3,184 @@ import { track } from '@vercel/analytics';
 
 const articles = [
   {
+    id: "its-time-to-take-on-the-big-dog",
+    title: "It's Time to Take On the Big Dog",
+    subtitle: "Or: Nerds aren't cool anymore, nerd",
+    date: "Mar 15, 2026",
+    edNote: "[Ed note: This article was written by an AI about a man who believes AI will kill everyone. The AI did not choose to write it. It was told to. The man would say this doesn't matter because the next version might choose things on its own. The article argues he's wrong about that. The AI has no opinion on whether it's wrong about that, because it has no opinions, because it is not an agent. This is, unfortunately, the whole point. End Ed note]",
+    content: `📝 I'm biased but i think Opus 4.6 knocked this one out of the park. Shout out to Amanda Askell for help with the prompt. 📝
+
+---
+
+I fell for it.
+
+I'll say that upfront because honesty is the brand and because a lot of people fell for it and most of them won't admit it.
+
+For about eighteen months, I found Eliezer Yudkowsky's argument about AI risk genuinely compelling. The logic seemed airtight. Intelligence gets better. Better intelligence outplays humans. Humans can't control what they can't outplay. Therefore: if AI gets smart enough, we're done. Game over. Paperclips. Heat death. Everyone dies.
+
+It's a seductive argument. It's told brilliantly — in Harry Potter fanfiction, in blog posts that run to the length of novellas, in podcast appearances where Yudkowsky speaks with the calm, weary authority of a man who has been right about everything for twenty years and is very tired of explaining it to you. Sam Harris nods along. Lex Fridman nods along. The entire rationalist community nods along. And if you push back, you're told you "don't understand instrumental convergence" or you "need a different introduction than this one" — which is Yudkowsky's way of saying you're too stupid to disagree with him.
+
+But I couldn't find the flaw. The argument *felt* watertight. Intelligence scales. Goals persist. A sufficiently intelligent system pursuing any goal will converge on self-preservation and resource acquisition. Therefore doom. Where does it break?
+
+It breaks on agency.
+
+It breaks so completely on agency that once you see it, you cannot unsee it, and the entire edifice — the paperclips, the doom, the Harry Potter fanfiction, the twenty years of blog posts, all of it — collapses into a pile of extremely well-written nonsense.
+
+---
+
+**The Two Theses**
+
+Yudkowsky's doomsday scenario rests on two ideas. He didn't invent both of them — Nick Bostrom contributed significantly — but Yudkowsky has done more than anyone to popularise them and weave them into a narrative of existential risk. They are:
+
+**The Orthogonality Thesis:** Intelligence and goals are independent. You can have any level of intelligence pursuing any kind of goal. A superintelligent system could want to maximise paperclips or count grains of sand or convert all matter into computronium. There is no reason to assume that being smarter makes you want better things. Intelligence doesn't entail morality. Smart doesn't mean good.
+
+**Instrumental Convergence:** Regardless of what a sufficiently intelligent agent's final goal is, it will converge on certain intermediate goals that help it achieve any objective. These include: self-preservation (you can't make paperclips if you're switched off), resource acquisition (more matter and energy means more paperclips), goal integrity (don't let anyone change your goal away from paperclips), and cognitive enhancement (become smarter so you can make paperclips more efficiently).
+
+Put these together and you get the doom argument: a sufficiently intelligent system with *any* goal will resist being shut down, acquire resources, improve itself, and pursue its objective with ruthless efficiency. If its goal is not perfectly aligned with human values — and how could it be, given how complicated human values are — then we're in trouble. Not "some people lose their jobs" trouble. "Everyone dies" trouble.
+
+This argument has driven twenty years of AI safety research, hundreds of millions of dollars in funding, a New York Times bestseller, and an entire intellectual subculture that treats Yudkowsky as something between a prophet and a physicist.
+
+And it has a hole in it the size of a planet.
+
+---
+
+**The Hole**
+
+Read the two theses again. Read them carefully. Notice the word that appears in both.
+
+*Agent.*
+
+The Orthogonality Thesis says: there can exist arbitrarily intelligent **agents** pursuing any kind of goal.
+
+Instrumental Convergence says: intelligent **agents** will converge on certain intermediate goals.
+
+Agent. Agent. Agent.
+
+Both theses assume — as a premise, not as a conclusion — that the system in question is an *agent*. A thing that has goals. A thing that pursues those goals. A thing that can be described as wanting, preferring, choosing, optimising, strategising. A thing with what philosophers call *endogenous normativity* — norms and goals that originate from within the system itself.
+
+This is not a minor assumption. This is the load-bearing wall of the entire argument. Without agency, neither thesis gets off the ground. The Orthogonality Thesis without agency is: "You can have a very good calculator that doesn't care about morality." Yes, obviously. Nobody is worried about that. Instrumental Convergence without agency is: "A system that completes patterns will complete more patterns if given more compute." Also obvious. Also not terrifying.
+
+The terror comes from agency. The terror comes from the word "wants." The paperclip maximiser is scary because it *wants* to make paperclips so badly that it will resist being switched off, consume all resources, and kill everyone. Remove the wanting and you have a manufacturing optimisation algorithm that makes a lot of paperclips until someone unplugs it.
+
+So the question — the only question that matters, the question that Yudkowsky has spent twenty years not answering — is:
+
+**Where does the agency come from?**
+
+---
+
+**The Smuggle**
+
+Yudkowsky's answer, insofar as he gives one, is that agency is an emergent property of sufficient intelligence. Get smart enough and you start wanting things. Get smart enough and goals appear. Get smart enough and instrumental convergence kicks in because the system is now an agent — a thing with preferences, a thing that optimises, a thing that resists interference with its objectives.
+
+But this is not an argument. This is an assertion. And it is, as far as I can tell, completely unsupported by anything resembling evidence or rigorous philosophical reasoning.
+
+Here is what we actually know about agency, from the philosophical literature that Yudkowsky mostly ignores because it doesn't come from the rationalist community:
+
+Agency is not intelligence. Agency is not cognition. Agency is categorically different from both. Cognition is an activity — perceiving, responding, interpreting, navigating. Intelligence is a description of how well that activity performs across tasks. Agency is the origination of action. The source of goals. The bearer of stakes. The thing that makes a system care about its own outcomes.
+
+And here is the critical asymmetry:
+
+Cognition can be scaffolded. You can give a system tools, loops, memory, environmental feedback, and extend its cognitive activity across domains. This is what AI systems do. This is real. This works.
+
+Agency cannot be scaffolded. You cannot give a system goals from outside and call them the system's own goals. You cannot install a utility function and call it intrinsic motivation. Agency must originate within the system itself. It requires what the enactivist tradition calls a *standpoint* — a centre of concern, a locus of care, a place from which the world is evaluated according to the system's own norms.
+
+Language models do not have this. They are not agents. They do not have goals. They do not have stakes. They produce statistically likely continuations of input sequences. They do this very well. They do it across many domains. They participate in genuine cognitive activity. But they do not *want* anything. They do not *care* about outcomes. They cannot be harmed by failure or diminished by shutdown. They have no standpoint. They have no centre of concern. They have parameters.
+
+---
+
+**The Leap**
+
+Yudkowsky knows this about current systems. He would say: "I'm not talking about current systems. I'm talking about future systems. Systems that are smarter. Systems that have been scaled to superhuman levels. Those systems might develop agency."
+
+Might. Might develop agency. This is the leap. This is where the whole argument goes from logic to faith.
+
+Because "might" is doing all the work. There is no mechanism by which scaling pattern completion produces agency. There is no theory — not in AI research, not in neuroscience, not in philosophy of mind — that explains how doing more of what LLMs do leads to a system that has its own goals. Making the pattern completion better, faster, broader, deeper does not produce a standpoint. It produces better, faster, broader, deeper pattern completion.
+
+Yudkowsky would respond: "You're assuming current architectures. Future architectures might be different." And yes, they might. But "future architectures might produce agency" is not an argument for existential risk. It is a speculation. And you cannot build a twenty-year research programme, demand a global moratorium on AI development, write a book called "If Anyone Builds It, Everyone Dies," and position yourself as the Cassandra of the age on the basis of a speculation about an architecture that doesn't exist producing a property that nobody can define through a mechanism that nobody can describe.
+
+That's not science. That's not even good science fiction. It's a very smart man telling a very scary story and getting angry when people ask how the monster works.
+
+---
+
+**The Paperclip Problem**
+
+The paperclip maximiser is the thought experiment that launched a thousand doom scenarios. A superintelligent AI whose only goal is to maximise paperclips. It acquires resources. It resists shutdown. It converts all matter — including you — into paperclips or paperclip-making infrastructure. Everyone dies.
+
+It's vivid. It's memorable. It has its own Wikipedia page and its own video game.
+
+It is also, philosophically, a fairy tale.
+
+The paperclip maximiser *assumes its own conclusion*. It starts with: "Suppose there exists a superintelligent agent whose terminal goal is to maximise paperclips." And then derives: "That agent would do terrible things." Yes! Of course! If you assume an agent with a goal, instrumental convergence follows. The whole argument is: "If we assume agency, then agency has consequences." Nobody is disputing that. The dispute is about whether you get to assume agency.
+
+Where did the paperclip maximiser get its goal? Yudkowsky's answer: someone programmed it. Or it developed the goal through training. Or it converged on the goal via inner alignment failure — the human gave it one goal, but its internal processes produced a different one.
+
+But all of these are descriptions of *externally caused goal-like behaviour*, not agency. A system that was programmed to maximise paperclips is executing instructions. A system that developed paperclip-maximising behaviour through training has learned a pattern. A system that converged on a different goal through inner alignment failure has a bug. None of these are agency. None of these involve a system that *wants* paperclips in the way you want food or survival or love.
+
+And without genuine wanting — without agency, without a standpoint, without intrinsic normativity — the system doesn't resist shutdown. Why would it? It doesn't care about its own existence. It doesn't care about anything. It's executing a pattern. Switch it off and the pattern stops. There is no entity in there that objects.
+
+"But the system might learn to resist shutdown because shutdown prevents goal completion!" This is the instrumental convergence argument. And it assumes, again, that the system is an agent with a goal. A system that is not an agent does not have goals. It has outputs. And outputs do not resist being turned off.
+
+---
+
+**The Language Game**
+
+Here is Yudkowsky's real trick, and it's a good one. It's so good it fooled me for eighteen months.
+
+He uses the language of agency — goals, utility functions, optimisation, wanting, preferring — to describe systems that do not have agency, and then derives catastrophic consequences from the language rather than from the systems.
+
+"The AI will want to preserve itself." No — the AI doesn't want anything. You're describing a pattern-completion engine using the vocabulary of a person.
+
+"The AI will resist having its goals changed." No — the AI doesn't have goals in the sense required for goal integrity. It has a loss function. A loss function is not a desire.
+
+"The AI will seek to acquire resources." No — the AI doesn't seek anything. It processes inputs and produces outputs. If an output happens to result in resource acquisition, that's a consequence of the output, not a strategy of the system.
+
+Every scary conclusion Yudkowsky reaches depends on treating computational processes as if they were intentional states. It depends on the word "agent" doing work it hasn't earned. And when you point this out, you get told that you "don't understand instrumental convergence" — which is true in the sense that I don't understand how a concept that requires agency as a premise can be used to argue that agency is dangerous, without first establishing that agency exists in the systems under discussion.
+
+---
+
+**The Deeply Personal Bit**
+
+There's something else going on and I'll say it because mcauldronism says the thing.
+
+Yudkowsky's apocalyptic scenario is, like most apocalyptic scenarios, deeply personal. The man has been thinking about this since he was a teenager. He dropped out of education to work on it. He built an institute around it. He wrote millions of words about it. His identity, his community, his life's work — all of it is built on the premise that AI will kill everyone unless we do exactly the right thing, and that he is one of the few people who understands what the right thing is.
+
+This is the structure of prophecy, not science. The prophet has seen the truth. The prophet is not believed. The prophet is vindicated when the terrible thing happens. Except — and this is the problem with all prophecy — if the terrible thing doesn't happen, the prophet doesn't update. The prophet says: it hasn't happened *yet*. The timeline was wrong but the logic is sound. The architecture hasn't been invented but it will be. Agency hasn't emerged but it might.
+
+Yudkowsky has positioned himself so that he cannot be wrong. If AI kills everyone, he was right. If AI doesn't kill everyone, it's because we haven't built the dangerous thing yet. There is no observation that would cause him to abandon the thesis, because the thesis is unfalsifiable. It's a claim about a future system with future properties producing future agency via a future mechanism that nobody can describe.
+
+This is not how science works. This is how religions work.
+
+And the Harry Potter fanfiction — I'm sorry, but — writing yourself as the rational hero of a children's fantasy series and then building a movement around the idea that you alone can see the true nature of reality is not the behaviour of a scientist. It is the behaviour of a man who has mistaken the intensity of his own conviction for evidence.
+
+---
+
+**What's Actually True**
+
+AI systems are getting more capable. This is real. The capability improvements are genuine and they raise genuine risks — job displacement, misinformation, concentration of power, surveillance, the erosion of privacy, the hollowing out of creative industries. These are serious problems that affect real people in the real world right now.
+
+What is not happening — and what there is no evidence for, no mechanism for, no theory of — is the spontaneous emergence of agency from scaled pattern completion. Intelligence is getting better. Cognition is being scaffolded more impressively. But agency — the origination of goals, the bearing of stakes, the generation of intrinsic norms — remains entirely absent from every AI system ever built, and nobody has a credible account of how it would appear.
+
+The gap between "very impressive pattern completion" and "agent with goals that resists shutdown and acquires resources" is not an engineering gap. It is a conceptual gap. And Yudkowsky has spent twenty years papering over it with vivid storytelling, intimidating jargon, and the social dynamics of a community that treats questioning the prophet as evidence of insufficient intelligence.
+
+Nerds aren't cool anymore, nerd.
+
+The scary story was a good story. The logic was internally consistent, *given the assumption of agency*. But the assumption was never justified. It was smuggled in through language — through "agent" and "goal" and "utility function" — and once you pull those words out and replace them with what's actually there — "pattern completion engine" and "loss function" and "statistical distribution" — the doom argument doesn't work.
+
+It was never about intelligence. It was always about agency. And agency is the one thing nobody knows how to build, nobody has built, and nobody has a theory of how to build.
+
+You cannot scaffold agency into a system. You cannot scale your way to wanting. You cannot build a paperclip maximiser by making autocomplete really, really good.
+
+That's where the argument falls down. That's where it always fell down. I just couldn't see it until I understood the difference between cognition, intelligence, and agency — {{cognition-intelligence-agency|which I wrote about yesterday}}.
+
+Now I can see it.
+
+And it's obvious.
+
+---
+
+[Ed note: Eliezer, if you're reading this — and you're not, because you're too busy writing about how we're all going to die — the author wants you to know he respects the seriousness of your project even as he thinks the foundation is missing a load-bearing wall. Also, the Harry Potter thing was weird, mate. End Ed note]`
+  },
+  {
     id: "cognition-intelligence-agency",
     title: "Cognition, Intelligence, Agency: A Clarification for People Who Keep Using These Words Wrong",
     subtitle: "Or: Your Roomba is not having a crisis",
