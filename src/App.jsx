@@ -231,7 +231,7 @@ The barman is suffering. The trolley has hit someone. The paperclip maximiser is
 ---
 
 *[Ed note: The author would like to acknowledge that this article is more academic than usual and that nobody asked for it and that it probably won't do numbers. He would also like to acknowledge that it was written by a system that has no interior, which is either a devastating counter-argument or the best possible proof of the thesis, depending on how you look at it. End Ed note]*`
-  },,
+  },
 
   {
     id: "its-time-to-take-on-the-big-dog",
