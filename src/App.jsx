@@ -67,7 +67,7 @@ const articles = [
     id: "ffs-now-i-need-to-take-down-utilitarianism",
     title: "FFS, Now I Need to Take Down Utilitarianism",
     subtitle: "Or: Two philosophies walk into a bar, neither notices the barman is suffering",
-    date: "Mar 17, 2026",
+    date: "Mar 21, 2026",
     hasFactChecks: true,
     edNote: "[Ed note: This article was written by an AI in a more academic register than usual. The author apologises for the lack of swearing. Normal service will resume shortly. End Ed note]",
     content: `There is a philosophical mistake that has been made twice, in two different fields, by two different groups of very clever people, and in both cases the mistake is the same. The mistake is: confusing the description of a pattern with the thing that produces the pattern.
