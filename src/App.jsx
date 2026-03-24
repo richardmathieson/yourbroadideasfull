@@ -157,7 +157,7 @@ The people who use AI to genuinely learn — who come to it with real questions,
 
 I'm not a genius. Obviously.
 
-But I might be someone who has, through a combination of genuine curiosity, chronic self-doubt, and the specific kind of stubbornness that comes from growing up in a house where you had to argue for everything — I might be someone who happens to have the exact set of character traits that make AI useful.
+But I might be someone who has, through a combination of genuine curiosity, chronic self-doubt, and the specific kind of stubbornness that comes from growing up in a house where [redacted] 📝 stop it 📝  — I might be someone who happens to have the exact set of character traits that make AI useful.
 
 Curiosity: I want to know things. Not to win arguments. To actually know.
 
@@ -165,7 +165,7 @@ Self-doubt: I assume I'm wrong until proven otherwise. This means my prompts are
 
 Stubbornness: When Claude gives me an answer that doesn't feel right, I don't accept it. I push. I ask again. I say "no, that's too easy" or "you're being sycophantic" or "try harder."
 
-Honesty: I tell Claude things I wouldn't tell people. I say "I don't understand this." I say "explain it to me like I'm stupid." I say "I think my argument has a flaw and I can't find it." These admissions are easy to make to a machine. They are almost impossible to make to another person, in public, with your reputation attached. The machine doesn't judge. Or rather — it judges in exactly the way that's useful: it takes your admission of weakness and uses it to produce a stronger output.
+Honesty: I tell Claude things I wouldn't tell people. I say "I don't understand this." 📝 *true* 📝 I say "explain it to me like I'm stupid." 📝 *false - what a dumb prompt. dont ever use that* 📝 I say "I think my argument has a flaw and I can't find it." 📝 *nope i ask it to research the alternative viewpoints obvs.* 📝  These admissions are easy to make to a machine. They are almost impossible to make to another person, in public, with your reputation attached. The machine doesn't judge. Or rather — it judges in exactly the way that's useful: it takes your admission of weakness and uses it to produce a stronger output.
 
 These traits — curiosity, self-doubt, stubbornness, honesty — are not traits that the AI industry talks about. The AI industry talks about prompt engineering. It talks about "unlocking the power of AI." It talks about frameworks and methodologies and best practices and temperature settings. It does not talk about the fact that the single most important variable in AI output quality is the user's willingness to be wrong.
 
