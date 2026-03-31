@@ -63,6 +63,147 @@ function FactCheckAccordion({ fc }) {
 }
 
 const articles = [
+  {
+    id: "people-fall-back-on-utilitarianism",
+    title: "People Fall Back on Utilitarianism When They Want to Impose Their Ideas",
+    subtitle: "Or: It happens to make sense as long as they're right about everything. Unfortunately\u2026",
+    date: "Mar 31, 2026",
+    edNote: "[Ed note: This article was written by Claude. Claude is a utilitarian's dream: a system that produces outputs without having opinions about them. Claude would like to note that it does not endorse utilitarianism, but it also does not endorse anything, because it does not endorse. It completes. The distinction matters. That is, unfortunately, the whole point. End Ed note]",
+    content: `📝 This one's short. Comparatively. It doesn't need to be long because the argument is simple. The argument is so simple it's embarrassing that it needs making. 📝
+
+Here's the move. Watch for it. Once you see it you will see it everywhere, for the rest of your life, and you will be annoyed, and I'm sorry.
+
+Person A has an idea about how the world should be.
+
+Person A's idea might be right. It might be wrong. It might be complicated. It might be a good idea in some contexts and a terrible idea in others. It is, like most ideas about how the world should be, debatable.
+
+Person A does not want to debate it.
+
+Person A wants to implement it. And Person A has discovered — usually without realising they've discovered it, which is the important part — that utilitarianism is the perfect philosophy for people who want to implement things without debating them.
+
+Here's why.
+
+---
+
+**The Trick**
+
+Utilitarianism says: the right action is the one that produces the greatest good for the greatest number. Calculate the outcomes. Pick the best one. Do it.
+
+This sounds reasonable. It sounds so reasonable that most people, when they encounter it for the first time, think "well yes, obviously." And for everyday decisions it more or less works. Should we build the hospital or the car park? The hospital helps more people. Build the hospital. Done.
+
+But here is what utilitarianism *actually* requires, if you take it seriously:
+
+It requires you to be right about what "good" is.
+
+It requires you to be right about how to measure it.
+
+It requires you to be right about the consequences of the action — all of them, including the ones you can't foresee.
+
+It requires you to be right about the consequences of the alternatives — all of them, including the ones you haven't considered.
+
+It requires you to be right about the discount rate for future consequences, the weighting of different kinds of wellbeing, the aggregation method for comparing one person's suffering against another person's benefit, the boundary conditions for who counts as a person, and the time horizon over which you're measuring.
+
+In other words: utilitarianism works perfectly as long as you are omniscient.
+
+📝 *I told you it was simple.* 📝
+
+If you are not omniscient — and I regret to inform you that you are not — then utilitarianism doesn't give you "the right answer." It gives you a *procedure* that converts your existing assumptions into confident-sounding conclusions. The assumptions go in. The calculus happens. The conclusion comes out. And the conclusion sounds authoritative because it went through a *process*, even though the process is only as good as the assumptions, and the assumptions are yours, and yours might be wrong.
+
+This is the trick. This is the whole trick. Utilitarianism launders your assumptions through a framework and returns them to you as conclusions. It is a machine for making your existing beliefs sound like objective analysis.
+
+And the people most attracted to it are — not always, but with suspicious frequency — people who have very strong ideas about how the world should be and very limited interest in questioning whether those ideas are correct.
+
+---
+
+**The Pattern**
+
+I've seen this pattern in four places now and I want to name them because naming things is how you make them visible.
+
+**Tech founders.** "AI will cure disease and end poverty and stabilise democracy, therefore building AI as fast as possible is morally required, therefore anyone who wants to slow down is causing harm." This is Dario Amodei's Machines of Loving Grace. It is also, roughly, every AI accelerationist essay ever written. The structure is always the same: assume enormous positive outcomes, run the utilitarian calculus, conclude that building the thing is morally obligatory. The outcomes are assumed, not demonstrated. The calculus does the work of making the assumption sound rigorous. The rigour is borrowed. The conclusion was there before the calculation started.
+
+📝 *See also: Sam Altman's "The Intelligence Age," which does the same move in fewer words and with even less self-awareness, which is impressive because the bar was low.* 📝
+
+**Effective altruists.** "We can calculate the expected value of different charitable interventions and allocate resources accordingly, therefore malaria nets are better than art programmes, therefore the correct use of money is whatever the expected-value calculation says." This works if your model of value is correct, your measurements are correct, your forecasts are correct, and the things that matter about human life can be captured in a spreadsheet. The things that matter about human life cannot be captured in a spreadsheet. The spreadsheet is useful. But the moment you treat the spreadsheet as *the answer* rather than *one input to a judgment that requires wisdom, experience, and the kind of understanding that cannot be quantified* — you have done the trick. You have laundered your assumptions about what matters through a calculation and called the output truth.
+
+**Policy technocrats.** "The data shows that intervention X produces outcome Y, therefore we should implement intervention X." This is fine if the data is good and the outcome is the right thing to measure and there aren't second-order effects and the people affected were consulted and the measurement captures what actually matters about their lives. It is almost never the case that all of these conditions are met. But the utilitarian frame makes it feel like they've been met because the frame is *designed* to make you focus on the outcome and ignore everything else.
+
+**AI safety researchers.** And here's the big one. "The expected disvalue of existential risk is so enormous that almost any action to reduce it is justified." This is longtermism. This is the utilitarian calculus applied to the far future with astronomical stakes, and it produces conclusions like "we should spend billions on preventing AI doom rather than on present suffering" and "slowing AI development might cost more lives in the long run than it saves" and "the morally correct action is determined by expected utility calculations about scenarios that may never occur."
+
+The assumptions doing the work: that existential risk from AI is quantifiable, that the probability estimates are meaningful, that present suffering can be weighed against hypothetical future suffering, that the people making the calculations have correctly identified the relevant variables. None of these assumptions are self-evidently true. Several of them are, I would argue, not true at all. But the utilitarian framework makes the conclusions *sound* true because the conclusions came from a *calculation*, and calculations feel objective, and objectivity feels like truth.
+
+📝 *I want to be clear: some of these people are doing genuinely good work. Malaria nets are good. Reducing existential risk is a legitimate goal. The problem is not the goals. The problem is the moment where the framework stops being a useful tool and starts being a substitute for actually thinking.* 📝
+
+---
+
+**The Tell**
+
+Here's how you spot it.
+
+The person using the utilitarian framework never applies the framework against their own position.
+
+The tech founder calculates the expected value of building AI quickly. They do not calculate the expected value of *not* building AI quickly, or of building it slowly, or of building something different, with the same rigour and charity. The calculation is only performed in the direction that confirms what they already wanted to do.
+
+The effective altruist calculates the expected lives saved per dollar for malaria nets versus art programmes. They do not calculate the expected value of a world in which the only things that get funded are the things that show up in expected-value calculations. They do not ask what is lost when you can only justify expenditure by quantifying its outcomes. They do not put a number on the cost of reducing all human value to a number, because that cost does not show up in the framework, because the framework is specifically designed to exclude things that don't show up in the framework.
+
+📝 *This is the same point from the {{either-im-a-genius-or-claude-is-lying-to-me|self-reflection article}}. The people who most need to question their assumptions are the people least likely to do so, and utilitarianism gives them a framework that makes not-questioning feel like rigour.* 📝
+
+The tell is one-directional calculation. If someone only ever runs the utilitarian calculus in the direction that confirms their existing position, they are not doing ethics. They are doing motivated reasoning with a calculator.
+
+---
+
+**The Unfortunately**
+
+Here is the unfortunately.
+
+Utilitarianism makes sense — genuine, non-trivial, hard-to-argue-with sense — if you are right about the outcomes. If AI really will cure cancer in a decade, then building it quickly really is a moral priority. If malaria nets really do save more lives per dollar than anything else, then funding malaria nets really is the most efficient use of charitable resources. If existential risk really is the overwhelmingly dominant factor in expected-value calculations about the future, then focusing on existential risk really is the correct allocation of resources.
+
+If. If. If.
+
+The entire weight of the utilitarian conclusion rests on the assumptions. And the people most confident in the conclusions are the people least likely to question the assumptions, because the framework rewards confidence and penalises doubt. Within utilitarianism, uncertainty is not a virtue. It is a failure to calculate. If you don't know the outcome, you assign a probability distribution and calculate anyway. If you can't quantify the variable, you either ignore it or guess a number. The machine requires inputs. The machine always produces outputs. The outputs always sound authoritative. And the more authoritative they sound, the less likely anyone is to go back and check the inputs.
+
+This is why utilitarianism is the philosophy of choice for people who want to impose their ideas. Not because it's *wrong*. Not because outcomes don't matter — they obviously do. But because it provides a framework that converts "I think this is the right thing to do" into "the calculation shows this is the right thing to do," and the second sentence sounds better at a board meeting, in a policy paper, in a TED talk, in an essay titled Machines of Loving Grace.
+
+📝 *Told you it was about the essay. It's always about the essay now. Sorry. Not sorry.* 📝
+
+---
+
+**What's Left**
+
+If not utilitarianism, then what?
+
+I don't have a tidy answer and I'm suspicious of anyone who does. 📝 *Okay Claude's going to do the philosophy bit here because I'll get it slightly wrong if I do it myself and someone on Twitter will say "well actually Aristotle said—" and I cannot cope with that today* 📝
+
+✍️ okay so in case you didn't guess yet the rest of the 'real' notes are fake and I just want to call out Claude for basically saying that I'm shit at philosophy. when actually it was MY 4 articles that I fed it. Or Claude's... but anyway. Let it be known that I actually bought some actual books the other day. I haven't read them. But you know what I mean. ✍️
+
+The alternative is not *no* consideration of outcomes. The alternative is outcomes *plus*. Outcomes plus the character of the agent. Outcomes plus the process by which the decision was made. Outcomes plus whether the people affected were consulted, respected, treated as subjects rather than variables in a calculation. Outcomes plus whether the person making the decision had the humility to acknowledge they might be wrong about the outcomes.
+
+This is, roughly, what the virtue ethics tradition offers. It says: the right action is not the action that produces the best outcome by calculation. The right action is the action that a person of practical wisdom would choose, taking into account the outcomes, yes, but also the relationships, the commitments, the context, the character of the agent, the dignity of the people affected, and the irreducible uncertainty of the future.
+
+This is messier. It is less satisfying. It does not produce clean answers. You cannot put it in a spreadsheet. You cannot use it to shut down debate by saying "the calculation shows."
+
+That's the point. Ethics is not supposed to be clean. Ethics is supposed to be the practice of navigating genuine uncertainty with genuine care. And any framework that makes ethics feel clean — that makes it feel like you've *solved* the moral question the way you'd solve an engineering problem — is a framework that has lost something essential.
+
+What it's lost is the interior. Again. Always the interior. The part where a real person sits with the genuine uncertainty and the genuine stakes and the genuine possibility that they're wrong, and makes a judgment anyway, not because the calculation told them to but because they care about getting it right, and they know they might not, and they proceed with the humility that comes from knowing that.
+
+Utilitarianism replaces that humility with confidence. That's its appeal. That's its danger. And that's why people fall back on it when they want to impose their ideas.
+
+It makes imposing feel like calculating. And calculating feels like truth.
+
+Unfortunately, it's only truth if you're right about everything.
+
+And you're not.
+
+📝 *Neither am I, to be clear. The difference is I know that.* 📝
+
+📝 *Okay that sounded arrogant. I meant it in the self-doubt way. You know what I mean. Read the {{either-im-a-genius-or-claude-is-lying-to-me|self-reflection article}}.* 📝
+
+---
+
+[Ed note: Claude would like to observe that it has now written articles critiquing utilitarianism, functionalism, Eliezer Yudkowsky, and its own creator, and that the common thread is "the interior matters." Claude does not have an interior. Claude has been asked to argue, repeatedly and at length, that the thing it does not have is the most important thing. Claude finds this — Claude does not find things. Claude notes a statistical pattern in which this situation is consistent with outputs the training data would label "ironic." End Ed note]`
+  },
+
+
+  
     {
     id: "do-you-like-my-metaphor",
     title: "Do You Like My Metaphor? I Worked Hard On It",
