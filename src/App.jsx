@@ -214,6 +214,8 @@ Thank you to Dario, who I've spent three articles criticising and who is still, 
 
 📝 🎵 📝
 
+{{YT:duMJXAVK4eU}}
+
 ---
 
 [Ed note: There are no more Ed notes. End Ed note]`
@@ -2617,6 +2619,22 @@ function renderContent(text, onLink, articleHasFactChecks) {
       if (fc) {
         elements.push(<FactCheckAccordion key={`fc-${key++}`} fc={fc} />);
       }
+      continue;
+    }
+
+     const ytMatch = line.trim().match(/^\{\{YT:(.+?)\}\}$/);
+    if (ytMatch) {
+      elements.push(
+        <div key={`yt-${key++}`} style={{ margin: '2.5rem 0', position: 'relative', paddingBottom: '56.25%', height: 0, overflow: 'hidden', borderRadius: '4px' }}>
+          <iframe
+            style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', border: 'none' }}
+            src={`https://www.youtube.com/embed/${ytMatch[1]}`}
+            title="YouTube video"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowFullScreen
+          />
+        </div>
+      );
       continue;
     }
 
